@@ -1,0 +1,127 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.main-menu ul {
+		display: none;
+		position: absolute;
+		background-color: #3797bf;
+		width: 100%;
+	}
+
+	.main-menu ul li {
+		display: block;
+	}
+
+	.prev_button,
+	.next_button {
+		font-size: 32px;
+		top: 45%;	
+	}
+
+	.prev_button {
+		padding: 0 20px 2px 17px;
+		left: 15px;
+	}
+
+	.next_button {
+		padding: 0 17px 2px 20px;
+		right: 15px;
+	}
+
+	.sell-right .button {
+		margin: 15px auto; 
+		float: none;
+		max-width: 250px;
+	}
+
+	.sell-description {
+		text-align: center;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.top-links {
+		display: none;
+		background-color: #585d61;
+		vertical-align: middle;
+		position: absolute;
+		widows: 100%;
+		margin-top: 15px;
+		padding: 14px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.top-contacts {
+		font-size: 24px;
+	}
+
+	.prev_button,
+	.next_button {
+		font-size: 18px;
+		top: 48%;	
+	}
+
+	.prev_button {
+		padding: 0 13px 2px 10px;
+		left: 10px;
+	}
+
+	.next_button {
+		padding: 0 10px 2px 13px;
+		right: 10px;
+	}
+
+	.right-aside {
+	padding: 5px;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.top-contacts {
+		font-size: 20px;
+		padding: 0 15px 0 33px;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.top-links {
+		display: inline-block !important;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.main-menu ul {
+		display: block !important;
+	}
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
