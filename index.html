@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Home Page</title>
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+
+		<style>
+
+			body {
+				background: rgba(0, 0, 0, .25) url(img/dark.png);
+				font-family: 'PT Sans Narrow', sans-serif;
+				font-size: 40px;
+				text-transform: uppercase;
+			}
+
+			a {
+				text-decoration: none;
+				color: rgba(255, 215, 0, .25);
+				margin: 0 auto;
+				-webkit-transition: .3s;
+				-o-transition: .3s;
+				transition: .3s;
+			}
+
+			h1 {
+				text-align: center;
+				color: rgba(255, 215, 0, .25);
+				-webkit-box-shadow: 5px 0 30px rgba(0, 0, 0, .5);
+				box-shadow: 5px 0 30px rgba(0, 0, 0, .5);
+			}
+
+			.wrapper {
+				width: 940px;
+				margin: 50px auto;
+			}
+
+			table {
+				width: 100%; /* Ширина таблицы */
+				background: transparent; /* Цвет фона таблицы */
+				color: #ccc; /* Цвет текста */
+				border-spacing: 20px; /* Расстояние между ячейками */
+				border: none;
+			}
+
+			td {
+				width: 300px;
+				height: 300px;
+				position: relative;
+				background-color: rgba(0, 0, 0, .25); /* Цвет фона ячеек */
+				padding: 15px; /* Поля вокруг текста */
+				text-align: center;
+				border: none;
+				border-radius: 0 25px;
+				-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+				box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
+				box-sizing: border-box;
+				-webkit-transition: .3s;
+				-o-transition: .3s;
+				transition: .3s;
+			}
+			
+			td:hover {
+				background-color: rgba(0, 0, 0, .6);
+				cursor: pointer;
+				-webkit-transform: scale(1.025);
+				-ms-transform: scale(1.025);
+				-o-transform: scale(1.025);
+				transform: scale(1.025);
+			}
+			
+			td .done {
+				display: block;
+		    position: absolute;
+		    width: 100%;
+		    height: 100%;
+		    top: 0;
+		    left: 0;
+			}
+
+			.done:hover > td {
+			-webkit-transform: scale(1.9);
+			-ms-transform: scale(1.9);
+			-o-transform: scale(1.9);
+			transform: scale(1.9);
+			}
+
+			td:hover > a {
+				color: rgba(255, 215, 0, .6);
+			}
+			
+			tr:nth-child(1) td:nth-child(3) {
+				background: transparent url(img/projects/prev-3.jpg) 50% 50% no-repeat;
+			}
+
+			tr:nth-child(2) td:nth-child(1) {
+				background: transparent url(img/projects/prev-4.jpg) 50% 50% no-repeat;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		
+		<div class="wrapper">
+				
+				<h1>My portfolio</h1>
+
+				<table border="1">
+			   <tr>
+			    <td><a href="#">Project #1</a></td>
+			    <td><a href="#">Project #2</a></td>
+			    <td><a href="/webworld/" class="done"></a></td>
+			   </tr>
+			   <tr>
+			    <td><a href="blueasy" class="done"></a></td>
+			    <td><a href="#">Project #5</a></td>
+			    <td><a href="#">Project #6</a></td>
+			  </tr>
+			  <tr>
+			    <td><a href="#">Project #7</a></td>
+			    <td><a href="#">Project #8</a></td>
+			    <td><a href="#">Project #9</a></td>
+			  </tr>
+			  <tr>
+			    <td><a href="#">Project #10</a></td>
+			    <td><a href="#">Project #11</a></td>
+			    <td><a href="#">Project #12</a></td>
+			  </tr>
+			 </table>
+
+		</div>
+
+	</body>
+</html>
