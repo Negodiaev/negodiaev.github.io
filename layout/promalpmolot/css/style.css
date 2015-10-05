@@ -1,5 +1,15 @@
 @import url(reset.css);
 
+@font-face {
+    font-family: "IntroRegular";
+    src: url("../fonts/IntroRegular/IntroRegular.eot");
+    src: url("../fonts/IntroRegular/IntroRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/IntroRegular/IntroRegular.woff") format("woff"),
+    url("../fonts/IntroRegular/IntroRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 .clear { /* Схлопывание */
 	clear: both;
 }
@@ -53,7 +63,7 @@ a { /* Ссылки */
 }
 
 h1 { /* Заголовок сайта (логотип) */
-	font: 60px Intro, Arial, Verdana, sans-serif;
+	font: 60px "IntroRegular", Arial, Verdana, sans-serif;
 	color: #3bbdfb; 
 	text-transform: uppercase;
 }
