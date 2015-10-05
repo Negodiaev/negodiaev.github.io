@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Home Page</title>
+		<title>My portfolio</title>
 		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 
 		<style>
@@ -10,7 +10,7 @@
 			body {
 				background: rgba(0, 0, 0, .25) url(img/dark.png);
 				font-family: 'PT Sans Narrow', sans-serif;
-				font-size: 40px;
+				font-size: 36px;
 				text-transform: uppercase;
 			}
 
@@ -18,28 +18,30 @@
 				text-decoration: none;
 				color: rgba(255, 215, 0, .25);
 				margin: 0 auto;
-				-webkit-transition: .3s;
-				-o-transition: .3s;
-				transition: .3s;
 			}
 
 			h1 {
+				font-size: 52px;
+				color: #ccc;
+				display: inline-block;
+				padding: 10px 50px;
+				border-radius: 10px;
 				text-align: center;
-				color: rgba(255, 215, 0, .25);
-				-webkit-box-shadow: 5px 0 30px rgba(0, 0, 0, .5);
-				box-shadow: 5px 0 30px rgba(0, 0, 0, .5);
+				/* -webkit-box-shadow: 5px 0 30px rgba(0, 0, 0, .5);
+				box-shadow: 5px 0 30px rgba(0, 0, 0, .5); */
 			}
 
 			.wrapper {
-				width: 940px;
-				margin: 50px auto;
+				width: 960px;
+				margin: 75px auto;
+				text-align: center;
 			}
 
 			table {
 				width: 100%; /* Ширина таблицы */
 				background: transparent; /* Цвет фона таблицы */
 				color: #ccc; /* Цвет текста */
-				border-spacing: 20px; /* Расстояние между ячейками */
+				border-spacing: 30px; /* Расстояние между ячейками */
 				border: none;
 			}
 
@@ -55,18 +57,6 @@
 				-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
 				box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
 				box-sizing: border-box;
-				-webkit-transition: .3s;
-				-o-transition: .3s;
-				transition: .3s;
-			}
-			
-			td:hover {
-				background-color: rgba(0, 0, 0, .6);
-				cursor: pointer;
-				-webkit-transform: scale(1.025);
-				-ms-transform: scale(1.025);
-				-o-transform: scale(1.025);
-				transform: scale(1.025);
 			}
 			
 			td .done {
@@ -77,18 +67,17 @@
 		    top: 0;
 		    left: 0;
 			}
-
-			.done:hover > td {
-			-webkit-transform: scale(1.9);
-			-ms-transform: scale(1.9);
-			-o-transform: scale(1.9);
-			transform: scale(1.9);
-			}
-
-			td:hover > a {
-				color: rgba(255, 215, 0, .6);
-			}
 			
+			td.got:hover {
+				-webkit-transform: translate(0px, -7px);
+				-ms-transform: translate(0px, -7px);
+				-o-transform: translate(0px, -7px);
+				transform: translate(0px, -7px);
+				-webkit-transition: .35s;
+				-o-transition: .35s;
+				transition: .35s;
+			}
+
 			tr:nth-child(1) td:nth-child(1) {
 				background: transparent url(img/projects/prev-1.jpg) 50% 50% no-repeat;
 			}
@@ -105,6 +94,30 @@
 				background: transparent url(img/projects/prev-4.jpg) 50% 50% no-repeat;
 			}
 
+			@-webkit-keyframes shadow {
+				0%, 100% { -webkit-box-shadow: 0 0 10px rgba(100, 100, 100, .7); } 
+				50% { box-shadow: 0 0 25px rgba(100, 100, 100, .7); }
+			}
+			@-moz-keyframes shadow {
+				0%, 100% { -webkit-box-shadow: 0 0 10px rgba(100, 100, 100, .7); } 
+				50% { box-shadow: 0 0 25px rgba(100, 100, 100, .7); }
+			}
+			@-o-keyframes shadow {
+				0%, 100% { -webkit-box-shadow: 0 0 10px rgba(100, 100, 100, .7); } 
+				50% { box-shadow: 0 0 25px rgba(100, 100, 100, .7); }
+			}
+			@keyframes shadow {
+				0%, 100% { -webkit-box-shadow: 0 0 10px rgba(100, 100, 100, .7); } 
+				50% { box-shadow: 0 0 25px rgba(100, 100, 100, .7); }
+			}			
+			
+			.ttl {
+				-webkit-animation: shadow 3s linear infinite;
+				-moz-animation: shadow 3s linear infinite;
+				-o-animation: shadow 3s linear infinite;
+				animation: shadow 3s linear infinite;
+			}
+
 		</style>
 
 	</head>
@@ -113,28 +126,28 @@
 		
 		<div class="wrapper">
 				
-				<h1>My portfolio</h1>
+				<h1 class="ttl">My portfolio</h1>
 
 				<table border="1">
 			   <tr>
-			    <td><a href="layout/mobapps/index.html" class="done"></a></td>
-			    <td><a href="layout/promalpmolot/index.html" class="done"></a></td>
-			    <td><a href="layout/webworld/index.html" class="done"></a></td>
+			    <td class="got"><a href="layout/mobapps/index.html" class="done"></a></td>
+			    <td class="got"><a href="layout/promalpmolot/index.html" class="done"></a></td>
+			    <td class="got"><a href="layout/webworld/index.html" class="done"></a></td>
 			   </tr>
 			   <tr>
-			    <td><a href="layout/blueasy/index.html" class="done"></a></td>
-			    <td><a href="#">Project #5</a></td>
-			    <td><a href="#">Project #6</a></td>
+			    <td class="got"><a href="layout/blueasy/index.html" class="done"></a></td>
+			    <td><p>Project #5</p></td>
+			    <td><p>Project #6</p></td>
 			  </tr>
 			  <tr>
-			    <td><a href="#">Project #7</a></td>
-			    <td><a href="#">Project #8</a></td>
-			    <td><a href="#">Project #9</a></td>
+			    <td><p>Project #7</p></td>
+			    <td><p>Project #8</p></td>
+			    <td><p>Project #9</p></td>
 			  </tr>
 			  <tr>
-			    <td><a href="#">Project #10</a></td>
-			    <td><a href="#">Project #11</a></td>
-			    <td><a href="#">Project #12</a></td>
+			    <td><p>Project #10</p></td>
+			    <td><p>Project #11</p></td>
+			    <td><p>Project #12</p></td>
 			  </tr>
 			 </table>
 
