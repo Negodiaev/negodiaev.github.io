@@ -1,0 +1,191 @@
+@import "../bourbon/bourbon"
+
+
+$main_color: #FFCBAF //Theme skin
+$second_color: #98A5CC
+$w_color: #fff
+$head_color: rgba(#FFCBAF, .5)
+$port_item_color: rgba(#FFCBAF, .8)
+$footer_color: rgba(#898D99, 1)
+$foot_txt: rgba(#FFCBAF, 1)
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	color: $w_color
+	+kerning(1)
+	background-color: #555
+a
+	color: $w_color
+	&:hover
+		color: $second_color
+		@include transition-duration(.25s)
+
+p
+	color: $w_color
+
+.active_link
+	color: $second_color
+	border: 2px solid #98A5CC
+
+
+///////
+.color_element
+	color: $second_color
+.color_bg
+	background-color: $second_color
+.color_border
+	border-color: $second_color
+///////
+
+h1, h2, .top_line 
+	background-color: $port_item_color
+	color: $w_color
+
+.top_line
+	background-color: $main_color
+
+.h_line
+	background-color: $w_color
+
+.logo
+	color: $w_color
+	span
+		color: $second_color
+
+.services
+	background-color: $second_color
+
+.s_portfolio
+	background-color: $w_color
+	h3, h4, li
+		color: $main_color
+	.h_line
+		background-color: $main_color
+	.controls
+		.active_link
+			color: $second_color
+
+.portfolio_item
+	a
+		color: $main_color
+		&:hover
+			color: $w_color
+
+.port_item_cont
+	background-color: $port_item_color
+
+.port_descr
+	background-color: $main_color
+
+.s_default
+	background-color: $main_color
+	a
+		color: $main_color
+		border: 2px solid $main_color
+		background-color: $w_color
+		&:hover
+			background-color: $second_color
+			color: $w_color
+
+.s_tw
+	background-color: $second_color
+	.tw_user:hover
+		color: $port_item_color
+
+.about_content
+	.social
+		a:hover
+			background-color: $port_item_color
+			color: $w_color
+
+.s_testimonials
+	background-color: $footer_color
+	.h_line
+		background-color: $main_color
+	h3, p, i
+		color: $main_color
+	a
+		color: $second_color
+		&:hover
+			color: $main_color
+
+// Contacts section
+
+.contacts_wrap
+	background-color: $head_color
+
+form
+	span
+		color: $w_color
+
+textarea
+	color: $second_color
+
+.form_btn
+	background-color: $main_color
+	&:hover
+		background-color: $second_color
+		@include transition-duration(.25s)
+
+
+//Contacts section
+
+footer
+	background-color: $footer_color
+	a, p, li
+		color: $foot_txt
+		border-color: $foot_txt
+
+
+
+////////////////////////
+// =keyframes($name)
+//   @-webkit-keyframes #{$name}
+//     @content
+//   @-moz-keyframes #{$name}
+//     @content
+//   @-ms-keyframes #{$name}
+//     @content
+//   @keyframes #{$name}
+//     @content
+
+// use of keyframes mixin
+	// +keyframes (bgcolor)
+	//   0%
+	//     background-color: #ffccf2
+	//   50%
+	//     background-color: #ccffcc
+	//   100%
+	//     background-color: #ccffff
+
+@keyframes bounce
+  0%
+    transform: translateY(0px)
+  20%
+  	transform: translateY(2px)
+  40%
+    transform: translateY(5px)
+  60%
+    transform: translateY(-1px)
+  80%
+  	transform: translateY(-2px)
+  100%
+    transform: translateY(-1px)
+
+.to_down
+	&:hover
+		@include animation(bounce .75s ease infinite)
+
+@keyframes sizeUp
+	0%
+		transform: rotate(0deg)
+	50%
+		transform: rotate(-180deg)
+	100%
+		transform: rotate(-360deg)
+
+.my
+	&:hover
+		@include animation(sizeUp 1s linear)

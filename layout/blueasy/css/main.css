@@ -1,0 +1,582 @@
+body {
+  font-family: "SegoeUIRegular", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.42857;
+  -webkit-font-smoothing: antialised;
+  overflow-x: hidden;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #B9525D;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #ddd;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  font-family: "SegoeUI", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section,
+.contacts_content {
+  padding: 65px 0 70px;
+}
+
+section,
+.main_head,
+.s_about {
+  position: relative;
+}
+
+.main_head,
+.s_about {
+  min-height: 480px;
+  z-index: 2;
+}
+
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.loader .loader_inner {
+  background-image: url("../img/preloader.gif");
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+.top_line {
+  position: absolute;
+  display: table-row;
+  right: 0;
+  top: 0;
+  width: 100%;
+  opacity: .8;
+  z-index: 7;
+  -webkit-transition: .3s;
+          transition: .3s;
+}
+
+.top_line:hover {
+  opacity: .99;
+}
+
+.top_wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.top_wrapper .top_descr {
+  display: table-row;
+  height: 100%;
+}
+
+.top_wrapper .top_descr .top_centered {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.top_wrapper .top_text {
+  display: inline-block;
+}
+
+.top_wrapper .to_down {
+  font-size: 40px;
+  display: block;
+  position: absolute;
+  bottom: 30px;
+  left: 48%;
+  opacity: .75;
+}
+
+h1, h2 {
+  display: block;
+  font-family: "SegoeUILight", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 5px 30px;
+  margin: 0 10px 10px;
+  opacity: .7;
+}
+
+h1 {
+  font-size: 2.625em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-family: "SegoeUILight", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1.875em;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+}
+
+.h_line {
+  width: 45px;
+  height: 2px;
+  margin-top: 5px;
+}
+
+h4 {
+  font-family: "SegoeUISemibold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+}
+
+.logo {
+  display: block;
+  padding: 0;
+  float: left;
+  font-family: "SegoeUI", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1.875em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 30px 0 10px;
+}
+
+.top_menu {
+  float: right;
+}
+
+.top_menu ul {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 40px 0;
+  padding: 0;
+}
+
+.top_menu ul li {
+  display: inline-block;
+}
+
+.top_menu ul li a {
+  padding: 8px 16px;
+  margin-left: 7px;
+}
+
+.top_menu_btn {
+  padding: 5px;
+  margin: 12px 5px 0 0;
+  float: right;
+  font-size: 26px;
+  border: none;
+  background-color: transparent;
+}
+
+.s_portfolio {
+  margin: 0 auto;
+}
+
+.s_portfolio .section_header {
+  float: left;
+  margin-bottom: 75px;
+}
+
+.s_portfolio .controls {
+  float: right;
+}
+
+.s_portfolio ul,
+.s_portfolio li {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+
+.s_portfolio li {
+  font-family: "SegoeUIBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 0.875em;
+  padding: 0 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+  line-height: 2;
+}
+
+.s_portfolio ul {
+  padding: 0;
+  margin: 10px 0 50px;
+}
+
+.portfolio_item {
+  display: none;
+  opacity: 0.9;
+  padding: 0;
+}
+
+.portfolio_item img {
+  width: 100%;
+}
+
+.portfolio_item .port_item_cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+}
+
+.portfolio_item:hover .port_item_cont {
+  opacity: 1;
+  padding-top: 17%;
+}
+
+.portfolio_item a {
+  background-color: transparent;
+  padding: 10px;
+  font-size: 44px;
+  display: inline-block;
+  font-weight: normal;
+}
+
+.port_descr {
+  max-width: 700px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.port_descr p,
+.port_descr h4 {
+  padding: 20px 20px 0 20px;
+}
+
+.port_descr h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 20px;
+  padding-top: 25px;
+}
+
+.port_descr p {
+  margin-top: 0;
+}
+
+.port_descr img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.modal-box-content {
+  position: relative;
+}
+
+.s_default .left_col {
+  width: 80%;
+}
+
+.s_default .left_col p {
+  padding: 10px 0;
+  text-align: justify;
+}
+
+.s_default .left_col a {
+  display: inline-block;
+  padding: 15px 35px;
+  font-family: "SegoeUIBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: normal;
+}
+
+.s_default .right_col {
+  text-align: center;
+  margin-right: 15px;
+  box-shadow: 0 0 150px #fff;
+}
+
+.s_default_vid {
+  width: 100%;
+  border: none;
+  min-height: 300px;
+}
+
+.s_testimonials p,
+.s_tw p {
+  font-family: "SegoeUILight", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1.75em;
+  line-height: 40px;
+  margin: 20px 0 0;
+}
+
+.s_testimonials p .tw_user,
+.s_tw p .tw_user {
+  font-family: "SegoeUISemibold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  text-transform: lowercase;
+  font-weight: normal;
+}
+
+.s_testimonials .bird,
+.s_testimonials .quotes,
+.s_tw .bird,
+.s_tw .quotes {
+  text-align: right;
+  font-size: 22px;
+}
+
+.s_about {
+  min-height: 460px;
+}
+
+.about_wrapper {
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.about_wrapper .about_descr {
+  display: table-row;
+  z-index: 4;
+}
+
+.about_wrapper .about_descr .about_content {
+  display: table-cell;
+  z-index: 5;
+  padding: 65px 0 70px;
+}
+
+.about_wrapper .about_descr .about_content p {
+  margin: 25px 0 0;
+}
+
+.about_wrapper .about_descr .about_content .social {
+  margin-bottom: 40px;
+}
+
+.about_wrapper .about_descr .about_content .social ul {
+  list-style-type: none;
+  margin: 40px 0 0 -40px;
+}
+
+.about_wrapper .about_descr .about_content .social ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.about_wrapper .about_descr .about_content .social ul li a {
+  font-size: 1.75em;
+  padding: 10px 12px;
+  border: 2px solid #fff;
+}
+
+.s_testimonials {
+  z-index: 2;
+}
+
+.s_testimonials p {
+  margin-bottom: 30px;
+}
+
+.s_testimonials a {
+  font-family: "SegoeUIBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.s_contacts {
+  background: url(../img/contacts_bg.jpg) no-repeat top center;
+  min-height: 480px;
+  padding: 0;
+  z-index: 3;
+}
+
+.s_contacts .contacts_content {
+  width: 100%;
+  height: 100%;
+}
+
+.s_contacts .contacts_content ul {
+  list-style-type: none;
+  margin: 30px 0 0 -40px;
+  text-align: right;
+}
+
+.s_contacts .contacts_content p {
+  font-family: "SegoeUISemibold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 0.875em;
+  margin-top: 15px;
+}
+
+.s_contacts .contact_ttl {
+  margin-bottom: 40px;
+}
+
+.s_contacts .contact_info span {
+  font-size: 1.125em;
+}
+
+.main_form_wrap {
+  position: relative;
+}
+
+.main_form span {
+  font-family: "SegoeUIBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 0.875em;
+  text-transform: uppercase;
+}
+
+.main_form label {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.main_form label input {
+  display: block;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  width: 100%;
+  border: 2px solid #d9d9d9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06) inset;
+  text-indent: 10px;
+  margin-top: 3px;
+  background-color: transparent;
+}
+
+.main_form label textarea {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  resize: none;
+}
+
+.main_form .button_wrap {
+  text-align: left;
+  margin: 30px 0 10px;
+}
+
+.main_form .button_wrap .form_btn {
+  font-family: "SegoeUIBold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 0.875em;
+  padding: 25px 140px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+}
+
+footer {
+  padding: 45px 0 50px;
+}
+
+footer .left_col {
+  text-align: left;
+  display: inline-block;
+}
+
+footer .left_col ul {
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+footer .left_col ul li {
+  display: inline-block;
+  line-height: 20px;
+  border-right: 1px solid;
+  padding: 0 15px;
+}
+
+footer .left_col ul li a {
+  font-family: "SegoeUISemibold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 0.75em;
+  font-weight: normal;
+  padding: 0;
+}
+
+footer .left_col ul .lst_lnk {
+  border: none;
+}
+
+footer .right_col {
+  display: inline-block;
+  float: right;
+  font-size: 1em;
+}
+
+footer .right_col p {
+  margin-top: 16px;
+}
+
+footer .right_col a {
+  font-family: "SegoeUISemibold", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  text-transform: capitalize;
+}
+
+h1.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+h2.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.portfolio_item:nth-child(2n+1) {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+}
+
+.portfolio_item:nth-child(2n) {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: .25s;
+  animation-delay: .25s;
+}
