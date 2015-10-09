@@ -224,15 +224,16 @@ h4 {
 
 .slider-text .product-buttons a {
   padding: 10px;
+  margin-left: 5px;
+}
+
+.slider-text .product-buttons a:nth-child(3) {
+  padding: 10px 5px 10px 10px;
+  margin-right: 4px;
 }
 
 .slider-text .product-buttons a i {
   font-size: 20px;
-}
-
-.slider-text .product-buttons a i:nth-child(2) {
-  position: relative;
-  top: 3px;
 }
 
 .slider-item-cost,
