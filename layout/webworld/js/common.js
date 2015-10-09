@@ -4,6 +4,7 @@ $(document).ready(function() {
 			$(".main_menu ul").slideToggle();
 		});
 
+	//Меню с плавающей линией
 	var nav_wrap = $(".sliding_menu"),
         elem_width,
         elem_left_offset,
