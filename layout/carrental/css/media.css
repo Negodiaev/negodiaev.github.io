@@ -180,6 +180,10 @@
 		text-align: center;
 	}
 
+	.logo-wrapper {
+		display: none;
+	}
+
 }
 
 /* Extra Small Devices, Phones */
