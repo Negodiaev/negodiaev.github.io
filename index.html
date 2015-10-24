@@ -12,23 +12,43 @@
 				font-family: 'PT Sans Narrow', sans-serif;
 				font-size: 36px;
 				text-transform: uppercase;
+				color: #ccc;
 			}
 
 			a {
 				text-decoration: none;
 				color: rgba(255, 215, 0, .25);
 				margin: 0 auto;
+				-webkit-transition: .25s;
+				-o-transition: .25s;
+				transition: .25s;
 			}
 
-			h1 {
+			h1, h2 {
 				font-size: 52px;
 				color: #ccc;
 				display: inline-block;
 				padding: 10px 50px;
-				border-radius: 10px;
+				border-radius: 7px;
 				text-align: center;
 				/* -webkit-box-shadow: 5px 0 30px rgba(0, 0, 0, .5);
 				box-shadow: 5px 0 30px rgba(0, 0, 0, .5); */
+			}
+
+			h2 {
+				font-size: 40px;
+				margin: 50px 0 10px;
+				background-color: rgba(0, 0, 0, .25);
+				-webkit-text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.7);
+				-moz-text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.7);
+				-ms-text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.7);
+				-o-text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.7);
+				text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.7);
+				-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+				-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+				-ms-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+				-o-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+				box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 			}
 
 			.wrapper {
@@ -102,6 +122,42 @@
 				background: transparent url(img/projects/prev-6.jpg) 50% 50% no-repeat;
 			}
 
+			.simple-line {
+    		-webkit-box-shadow: 1px 1px 2px #000000;
+    		box-shadow: 1px 1px 2px #000000;
+    		height: 1px;
+    		margin-top: 50px;
+			}
+
+			.contacts {
+				font-size: 26px;
+			}
+			.contacts ul {
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+			}
+			.contacts p {
+				margin: 10px 0;
+				text-transform: none;
+				-webkit-text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.7);
+				-moz-text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.7);
+				-ms-text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.7);
+				-o-text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.7);
+				text-shadow: 3px 7px 5px rgba(0, 0, 0, 0.7);
+			}
+			.contacts a {
+				color: #ccc;
+			}
+			.contacts a:hover {
+				color: rgba(255, 255, 255, .3);
+			}
+			.contacts strong {
+				font-weight: bold;
+			}
+
+
+
 			@-webkit-keyframes shadow {
 				0%, 100% { -webkit-box-shadow: 0 0 15px rgba(100, 100, 100, .7); } 
 				50% { box-shadow: 0 0 40px rgba(100, 100, 100, .75); }
@@ -158,6 +214,17 @@
 			    <td><p>Project #12</p></td>
 			  </tr>
 			 </table>
+
+		<div class="simple-line"></div>
+		<div class="contacts">
+			<h2>My contacts</h2>
+			<ul>
+				<li><p><strong>E-mail:</strong> <a href="mailto:alex.negodiaev@gmail.com" itemprop="email">alex.negodiaev@gmail.com</a></p></li>
+				<li><p><strong>Skype:</strong> alex.negodiaev</p></li>
+				<li><p><strong>Phone number:</strong> +7-919-485-31-21</p></li>
+			</ul>
+		</div>
+
 
 		</div>
 
