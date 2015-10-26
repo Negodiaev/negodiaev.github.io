@@ -1,0 +1,223 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+.logo,
+.main-menu {
+	text-align: center;
+}
+.logo {
+	margin-bottom: 15px;
+}
+
+.about .about-image {
+	margin: 40px 0 30px
+}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+.logo {
+	text-align: left;
+}
+
+.main-menu {
+	position: relative;
+	opacity: 1;
+}
+.main-menu ul {
+	/*display: none;*/
+	position: absolute;
+	right: -15px;
+	top: 70px;
+	text-align: right;
+	background-color: rgba(48,48,48, 1);
+	margin: 0;
+	padding: 5px 0 10px;
+	width: 155px;
+	/*z-index: 2;*/
+}
+.main-menu ul li {
+	display: block;
+	margin: 15px 20px;
+}
+.main-menu ul li:before {
+	display: none;
+}
+.active-menu-link {
+	color: #fff;
+	border: none;
+}
+.open {
+	height: 320px
+}
+
+.main-image {
+	min-height: 360px;
+}
+
+.dark-line, .light-line {
+	width: 40%;
+}
+
+h2 {
+	margin: 10px 0
+}
+
+.about .dark-line {
+	margin: 20px auto;
+}
+.about .about-image {
+	margin: 40px 0 10px
+}
+
+.advantages h2 {
+	line-height: 40px;
+  padding: 0 20px;
+}
+.advantages p {
+	margin: 0 auto;
+  width: 65%;
+}
+.advantage-item {
+    margin: 60px 0 40px;
+}
+
+.service-item {
+	margin: 70px 0;
+}
+.service-text {
+	float: none;
+	width: 100%;
+}
+.service-text p {
+	margin-bottom: 0;
+}
+.service-photo {
+	display: block;
+	width: 75%;
+	margin: 0 auto 40px;
+	text-align: center;
+}
+
+.works .section-content {
+	margin-bottom: 20px;
+}
+.work-description,
+.service-description {
+	margin: 30px 20px;
+}
+
+.contacts p:last-child {
+	width: 75%;
+}
+.main-form-wrapper {
+  margin-top: 40px;
+}
+
+footer {
+	text-align: center;
+	padding: 10px 0;
+}
+footer p {
+	margin-bottom: 0;
+}
+footer .social-icons {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+.menu-line .logo a {
+	font-size: 24px;
+}
+.main-menu-button {
+	margin-top: 1px;
+  padding: 5px 12px;
+}
+.main-menu-button p {
+	font-size: 16px;
+}
+
+.main-image {
+	min-height: 280px;
+}
+
+.advantages p {
+  width: 100%;
+}
+
+.services p {
+	text-align: justify;
+	margin: 25px auto 10px;
+	width: 85%;
+}
+.service-description h3 {
+	padding: 20px
+}
+.service-photo {
+	width: 90%;
+}
+
+.works-item {
+	width: 100%;
+}
+.work-description,
+.service-description {
+	margin: 30px auto;
+}
+
+.contacts p:last-child {
+	width: 100%;
+}
+.main-form .button-wrapper {
+  text-align: center;
+  margin: 20px 0 0;
+}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
