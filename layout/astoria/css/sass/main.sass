@@ -1,0 +1,583 @@
+@import "bourbon/bourbon"
+
+body
+	font-family: "GeorgiaItalic"
+	font-weight: normal
+	font-size: 22px
+	min-width: 320px
+	position: relative
+	line-height: 1.2
+	-webkit-font-smoothing: antialised
+	background: #bfcbd8
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #B9525D
+body input:required:valid,
+body textarea:required:valid
+	color: #ddd
+
+.hidden
+	display: none
+
+a, h2, h3
+	text-transform: uppercase
+
+h2
+	font: 28px "RobotoCondensedRegular"
+	text-align: center
+	color: #112841
+	margin: 0 0 30px
+	span
+		font-family: "RobotoBlack", "Roboto Black", "Roboto"
+		font-weight: 900
+h3
+	font: 22px "RobotoBlack", "Roboto Black", "Roboto"
+	color: #bfcbd8
+	text-align: center
+	margin: 5px 0 10px
+	font-weight: 900
+
+section,
+footer
+	padding: 25px 0
+	.row
+		width: 100%
+		margin: 0 auto
+
+/******* INPUT PLACEHOLDER *******/
+input
+	&::-webkit-input-placeholder {color:#112841; text-align: center; text-transform: uppercase}
+	&::-moz-placeholder          {color:#112841; text-align: center}
+	&:-ms-input-placeholder      {color:#112841; text-align: center}
+	&:focus::-webkit-input-placeholder {color: transparent}
+	&:focus::-moz-placeholder          {color: transparent}
+	&:focus:-moz-placeholder           {color: transparent}
+	&:focus:-ms-input-placeholder      {color: transparent}
+
+input:focus
+	outline: none
+
+
+/******* BUTTON *******/
+.main-button-wrapper
+	text-align: center
+
+.main-button
+	font-family: "RobotoBlack", "Roboto Black", "Roboto"
+	font-weight: 900
+	color: #8299b2
+	padding: 10px
+	position: relative
+	display: inline-block
+	-webkit-transition: .2s
+	-o-transition: .2s
+	transition: .2s
+	&:hover
+		background-color: rgba(6, 38, 65, .88)
+
+
+.main-button, .main-button:after, .main-button:before
+  border: 1px solid #8299b2
+
+.main-button:before, .main-button:after
+  content: ''
+  position: absolute
+
+.main-button:before
+  width: 7px
+  height: 100%
+  left: 100%
+  top: 20%
+  border-left-color: transparent
+
+.main-button:after
+  top: 100%
+  left: 3%
+  width: 98%
+  height: 20%
+  border-top-color: transparent
+  border-right-color: transparent
+
+
+
+/*********************************/
+/********** MAIN STYLES **********/
+/*********************************/
+
+/*********************************/
+/************ HEADER *************/
+/*********************************/
+header
+	background: url(../img/header-bg.jpg) top center repeat-y
+	padding-bottom: 25px
+
+.header-content
+	max-width: 980px
+	margin: 0 auto
+
+.header-info
+	max-width: 980px
+	font: 22px "RobotoCondensedBold"
+	color: #fff
+	margin: 5px auto 0
+	.col-md-3
+		width: 27%
+	.col-md-4
+		width: 30%
+	.col-md-5
+		width: 43%
+	& > div
+		padding: 0
+	p
+		text-align: left 
+
+.header-icon
+	background: url(../img/main-sprite.png)
+	width: 50px
+	height: 30px
+	float: left
+
+.mail
+	span
+		background-position: -9px -57px
+		margin: 3px 12px 0 0
+.address
+	span
+		background-position: -5px -10px
+		margin-right: 5px
+.phones
+	span
+		background-position: -14px -96px
+		float: none
+		display: inline-block
+		margin-bottom: 17px
+	.phone-numbers
+		display: inline-block
+		p
+			font-size: 29px
+			margin: 0
+
+.logo
+	background: url(../img/logo.png) center center no-repeat
+	margin: 15px auto 30px
+	width: 217px
+	height: 102px
+	padding: 19px 23px
+	border: 1px solid #fff
+	box-sizing: content-box
+
+.header-content
+	p, h1
+		color: #fff
+	h1
+		text-align: center
+	.header-quote
+		color: #8299b2
+		margin: 17px 0
+		text-align: center
+	.header-description
+		width: 76.3%
+		margin-top: 10px
+		margin: 0 auto 40px
+		text-align: center
+
+.greeting
+	font: 22px "RobotoCondensedRegular"
+	margin-bottom: 15px
+	text-transform: uppercase
+	text-align: center
+h1
+	font: 28px "MyriadProRegular"
+	text-transform: uppercase
+	margin: 0 0 16px
+	span
+		font-family: "RobotoBlack", "Roboto Black", "Roboto"
+		font-weight: 900
+.header-description-line
+	height: 1px
+	background: #8299b2
+	width: 94%
+	margin: 0 auto
+
+
+/*********************************/
+/*********** SERVICES ************/
+/*********************************/
+.s-services
+	min-height: 808px
+	background: url(../img/services-bg.jpg) top center no-repeat
+	.main-button:hover
+		background-color: #fff
+
+.services-wrapper
+	max-width: 980px
+	margin: 0 auto 25px
+
+h2
+	&:before,
+	&:after
+		content: ""
+		display: inline-block
+		width: 50px
+		height: 50px
+		background: url(../img/main-sprite.png)		
+	&:before
+		background-position: -70px -8px
+		margin-bottom: -17px
+	&:after
+		background-position: -70px -65px
+		margin: 0 0 -13px 7px
+
+.services-item
+	padding: 0
+	cursor: pointer 
+	height: 200px
+	overflow: hidden
+	// position: relative
+	img
+		width: 100%
+	
+.service-text-wrapper,
+.service-item-wrapper 
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	.services-item-text,
+	.services-item-content
+		display: table-cell
+		vertical-align: middle
+.service-text-wrapper
+	top: 0
+.service-item-wrapper
+	// background: rgba(6, 38, 65, .88)
+	padding: 5px
+	top: -200px
+	.services-item-content
+		border: 1px solid #fff
+		a
+			display: block
+			text-align: center
+			text-transform: none
+			text-decoration: underline
+			margin-top: 30px
+			&:hover
+				text-decoration: none
+.item-line
+	height: 1px
+	width: 40%
+	background-color: #bfcbd8
+	margin: 0 auto
+
+
+/*********************************/
+/************ PRODUCT ************/
+/*********************************/
+.s-product
+	padding-bottom: 35px
+	background: url(../img/product-bg.jpg) top left repeat
+	color: #bfcbd8
+	text-align: center
+	h2
+		color: #bfcbd8
+		&:before
+			background-position: -137px -8px
+		&:after
+			background-position: -135px -65px
+	p
+		width: 90%
+		margin: 0 auto 25px
+		&:last-child
+			margin-bottom: 50px
+
+.product-wrapper
+	max-width: 980px
+	margin: 0 auto
+	.main-button-wrapper
+		margin-top: 50px
+
+
+/*********************************/
+/********** ADVANTAGES ***********/
+/*********************************/
+.s-advantages
+	background: url(../img/advantages-bg.jpg) center -90px no-repeat
+	padding-bottom: 0
+	.advantages-wrapper
+		max-width: 980px
+		margin: 0 auto
+		color: #112841
+		ul
+			margin-top: 50px
+			list-style: none
+			li
+				line-height: 29px
+				&:before
+					content: ""
+					float: left
+					background: url(../img/main-sprite.png) -193px -11px
+					width: 32px
+					height: 32px
+					margin: -2px 15px 0 0
+
+
+/*********************************/
+/************ ABOUT **************/
+/*********************************/
+.s-about
+	color: #bfcbd8
+	padding: 0
+	text-align: center
+	h2
+		color: #bfcbd8
+		margin-top: 35px
+		&:before,
+		&:after
+			display: none
+	.row
+		height: 100%
+
+.about-wrapper
+	padding: 0
+	width: 100%
+
+.about-content-wrapper
+	position: relative
+	min-height: 550px
+	&:first-child
+		background: url(../img/about-bg-1.jpg) top left repeat-y
+	&:last-child
+		background: url(../img/about-bg-2.jpg) top left repeat-y
+
+.about-content-text
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	width: 76%
+	height: 65%
+	margin: auto
+
+
+/*********************************/
+/*********** CONTACTS ************/
+/*********************************/
+.s-contacts
+	padding-bottom: 35px
+	background: url(../img/contacts-bg.jpg) top center no-repeat
+	color: #112841
+	text-align: center
+	.contacts-wrapper
+		max-width: 980px
+		margin: 0 auto
+		.main-form
+			margin-top: 40px
+			font-family: "RobotoCondensedRegular"	
+			input,
+			.main-button
+				color: #112841
+				width: 200px
+				height: 50px
+				text-transform: uppercase
+				border: 1px solid #112841
+				background-color: transparent
+			input
+				margin-right: 15px
+				padding: 5px 10px
+			.main-button:before,
+			.main-button:after
+				border-color: #112841
+			.main-button:before
+			  border-left-color: transparent
+			.main-button:after
+			  border-top-color: transparent
+			  border-right-color: transparent
+		.main-button:hover
+			background-color: #fff
+
+
+/*********************************/
+/************ FOOTER *************/
+/*********************************/
+footer
+	background: url(../img/footer-bg.jpg) top left repeat
+	color: #bfcbd8
+	text-align: center
+	.footer-wrapper
+		max-width: 980px
+		margin: 0 auto
+		ul
+			margin: 0
+			padding: 0
+			list-style: none
+			text-align: center
+			margin: 7px 0 20px
+			li
+				display: inline-block
+				margin-right: 25px
+				a
+					text-transform: none
+					font-family: "GeorgiaItalic"
+					color: #bfcbd8
+					&:hover
+						color: #fff
+		.header-info
+			color: #bfcbd8
+			margin: 12px 0 -5px
+			p
+				margin: 10px auto
+				line-height: 25px
+			.phones
+				margin-top: -14px
+			.mail span
+				background-position: 55px -58px
+			.address span	
+				background-position: 53px -11px
+			.phones span	
+				background-position: 53px 45px
+		.item-line
+			width: 60%
+			margin-top: 5px
+	.logo
+		background: url(../img/footer-logo.png) center center no-repeat
+		border: none
+		margin: 0 auto
+		padding: 10px 0
+	.rights
+		margin: 0
+
+
+/***** For mobile *****/
+
+.info-mobile-mail,
+.info-mobile-address,
+.info-mobile-phones,
+.info-mobile-phones
+	display: none
+
+/***** For animation *****/
+
+
+.anm-r
+	-webkit-animation-delay: .25s
+	-moz-animation-delay: .25s
+	-ms-animation-delay: .25s
+	-o-animation-delay: .25s
+	animation-delay: .25s 
+
+.contacts-wrapper .form-anm
+	-webkit-animation-delay: .5s
+	-moz-animation-delay: .5s
+	-ms-animation-delay: .5s
+	-o-animation-delay: .5s
+	animation-delay: .5s 
+
+
+/***************************************************/
+
+
+/******** STYLES ***********************/
+/*************** FOR *******************/
+/******************** PAGE *************/
+
+/*********************************/
+/************ CONTENT ************/
+/*********************************/
+.s-page-content
+	background: url(../img/page-content-bg.jpg) top left repeat
+	color: #112841
+
+.page-content-wrapper
+	width: 980px
+	position: relative
+	padding: 25px
+
+.page-content
+	h2	
+		font-family: "RobotoCondensedBold"
+		text-align: left
+		border-bottom: 1px solid #000
+		padding-bottom: 25px
+		&:after
+			display: none
+
+.page-menu
+	background-color: #566678
+	width: 210px
+	height: 100%
+	max-height: 765px
+	overflow: scroll
+	position: absolute
+	top: 0
+	left: -210px
+	padding: 30px 0
+	a
+		color: #fff	
+	h4, a
+		font: 18px "RobotoCondensedRegular"
+		text-transform: uppercase
+		text-align: center
+	h4
+		color: #fff
+		border-top: 1px solid #fff
+		border-bottom: 1px solid #fff
+		margin: 0 auto
+		padding: 12px 0
+		width: 67%
+	ul
+		list-style-image: url(../img/menu-marker.png)
+		margin-top: 15px
+		padding-left: 30px
+		li
+			line-height: 20px
+			margin-bottom: 20px
+			a
+				text-transform: none
+				line-height: 20px
+				&:hover
+					color: #bfcbd8
+					-webkit-transition: .2s
+					-o-transition: .2s
+					transition:  .2s
+	.page-inner-menu
+		text-align: center
+		margin: 0 40px 30px
+		border-top: 1px solid #fff
+		border-bottom: 1px solid #fff
+		ul
+			padding: 0
+			list-style: none
+			li
+				margin-bottom: 10px
+				a
+					text-transform: uppercase
+					text-decoration: underline
+					&:hover
+						text-decoration: none
+
+.page-images
+	text-align: center
+	.page-image
+		width: 19.5%
+		border: 3px solid #bfcbd8
+		display: inline-block
+		margin-bottom: 5px
+		img
+			width: 100%
+		a
+			height: 100%
+
+
+.description-example
+	font-family: "GeorgiaBoldItalic"
+	margin: 10px 0
+.list-example ol
+	margin-top: 10px
+.image-example
+	float: right
+	width: 50%
+	img
+		width: 100%
