@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Рубос</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="css/normalize/normalize.min.css" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
+	<link rel="stylesheet" href="libs/myFonts/stylesheet.css" />
+	<link rel="stylesheet" href="libs/bxslider/jquery.bxslider.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+	
+	<div id="wrapper" class="wrapper">
+		
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Rubos">
+		<input type="hidden" name="admin_email" value="rikoshet013@gmail.com">
+		<input type="hidden" name="form_subject" value="Form Subject">
+		<!-- END Hidden Required Fields -->
+
+		<header>
+			<nav class="main-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<a href="#" class="logo-menu logo-menu-mini hidden-lg hidden-md"><img src="img/logo-menu.png" alt="Logo-menu" /></a>
+							<a class="menu-mini-button hidden-lg hidden-md">Меню</a>
+							<ul>
+								<li>
+									<a href="#" class="logo-menu hidden-sm hidden-xs"><img src="img/logo-menu.png" alt="Logo-menu" /></a>
+								</li>
+								<li>
+									<a href="#advantages">О клубе</a></li>
+								<li>
+									<a href="#skills">Обучение</a>
+								</li>
+								<li>
+									<a href="#photogallery">Фото</a>
+								</li>
+								<li>
+									<a href="#questions">Вопросы</a>
+								</li>
+								<li>
+									<a href="#address">Контакты</a>
+								</li>
+							</ul>
+							<div class="phones-wrapper">
+								<p class="phone-number">8 (888) 888 88 88</p>
+								<p class="phone-number">9 (999) 999 99 99</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="main-logo"></div>
+						<h1>Рукопашный бой<br><span>Спортивный клуб</span>&quot;Рубос&quot;</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="header-info">
+							<p>Проводится набор в группу</p>
+							<p>Вторник 20:30 - 22:30,<br> 
+							Четверг 20:30 - 22:30<br>
+							Воскресенье (спарринг-день) 14:00</p>
+							<p>Цена абонемента: 3500 р</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-wrapper">
+							<p class="form-title">До окончания акции осталось:</p>
+							
+							<!-- Countdown start -->
+							<div id="countdown-dashboard-1" class="countdown-dashboard">
+								<div class="dash days_dash">
+									<div class="digit">0</div>
+									<span class="dash_title">дней</span>
+								</div>
+
+								<div class="dash hours_dash">
+									<div class="digit">0</div>
+									<div class="digit">0</div>
+									<span class="dash_title">часов</span>
+								</div>
+
+								<div class="dash minutes_dash">
+									<div class="digit">0</div>
+									<div class="digit">0</div>
+									<span class="dash_title">минут</span>
+								</div>
+
+								<div class="dash seconds_dash">
+									<div class="digit">0</div>
+									<div class="digit">0</div>
+									<span class="dash_title">секунд</span>
+								</div>
+							</div>
+							<!-- Countdown finish -->
+							
+							<form id="lead_crm1427" class="lead_crm_form lead_crm_ver main-form" method="post">
+						    <div class="lead_crm_inline client-phone-wrapper">
+					        <input name="phone" class="lead_crm_input client-phone" type="text" placeholder="Ваш номер телефона" data-validation-callbacks="not_empty" autocomplete="off">
+						    </div>
+						    <div style="text-align: center" class="lead_crm_inline_btn form-button-wrapper">
+						    <button id="send-form" class="lead_crm_submit form-button" name="submit" type="submit">Записаться на бесплатное пробное занятие</button>
+						    </div>
+							</form>
+							<p class="form-notice">Мы не передадим Ваши данные третьим лицам.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p class="header-bottom-message">Заполните форму или позвоните нам, чтобы записаться на бесплатное пробное занятие</p>
+		</header>
+
+		<section id="advantages" class="advantages">
+			<h2>Почему стоит тренироваться у нас?</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="advantage-wrapper">
+							<div class="advantage-icon">
+								<div class="circle"><i class="my my_a"></i></div>
+							</div>
+							<div class="advantage-description">
+								<h3>Грамотные инструкторы</h3>
+								<p>Профессионалы своего дела доходчиво объяснят, наглядно покажут и проследят, чтобы у Вас все получилось</p>
+							</div>
+						</div>
+						<div class="advantage-wrapper">
+							<div class="advantage-icon">
+								<div class="circle"><i class="my my_b"></i></div>
+							</div>
+							<div class="advantage-description">
+								<h3>Большой просторный зал</h3>
+								<p>Мы тренируемся в большом, чистом, хорошо проветриваемом зале, специально подготовленном для занятий единоборствами</p>
+							</div>
+						</div>
+						<div class="advantage-wrapper">
+							<div class="advantage-icon">
+								<div class="circle"><i class="my my_c"></i></div>
+							</div>
+							<div class="advantage-description">
+								<h3>Разделение по уровню подготовки</h3>
+								<p>У нас занимаются как новички, так и опытные бойцы, поэтому есть возможность подобрать Вам пару в соответствии с Вашим уровнем подготовки</p>
+							</div>
+						</div>
+						<div class="advantage-wrapper">
+							<div class="advantage-icon">
+								<div class="circle"><i class="my my_d"></i></div>
+							</div>
+							<div class="advantage-description">
+								<h3>Регулярные мероприятия</h3>
+								<p>Наш клуб регулярно проводит встречи с другими московскими клубами, мы принимаем участие в различных соревнованиях, открытых рингах и коврах</p>
+							</div>
+						</div>
+						<div class="advantage-wrapper">
+							<div class="advantage-icon">
+								<div class="circle"><i class="my my_e"></i></div>
+							</div>
+							<div class="advantage-description">
+								<h3>Прикладные и неспортивные техники</h3>
+								<p>В нашем клубе проводятся семинары по ножевому бою, групповому бою, отводится время на изучение неспортивных травмирующих техник</p>
+							</div>
+						</div>
+						<div class="advantage-wrapper">
+							<div class="advantage-icon">
+								<div class="circle"><i class="my my_f"></i></div>
+							</div>
+							<div class="advantage-description">
+								<h3>Удобное расположение залов</h3>
+								<p>Все наши залы находятся в шаговой доступности от станций метро</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="invitation">
+			<div class="container">
+				<div class="invitation-wrapper">
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Приходите на бесплатное пробное занятие</h2>
+							<p class="invitation-description">Посетите тренировку в нашем клубе, она расскажет Вам больше, чем может рассказать сайт. Первое занятие у нас - бесплатное, вне зависимости от того, продолжите ли Вы у нас тренироваться или нет.</p>
+							<p>Чтобы записаться на занятие, позвоните нам или заполните форму.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<p class="invitation-price">Цена абонемента:<br> 3500 рублей в месяц</p>
+						</div>
+						<div class="col-md-6">
+							<div class="form-wrapper">
+								<p class="form-title">До окончания акции осталось:</p>
+								
+								<!-- Countdown start -->
+								<div id="countdown-dashboard-2" class="countdown-dashboard">
+									<div class="dash days_dash">
+										<div class="digit">0</div>
+										<span class="dash_title">дней</span>
+									</div>
+					
+									<div class="dash hours_dash">
+										<div class="digit">0</div>
+										<div class="digit">0</div>
+										<span class="dash_title">часов</span>
+									</div>
+					
+									<div class="dash minutes_dash">
+										<div class="digit">0</div>
+										<div class="digit">0</div>
+										<span class="dash_title">минут</span>
+									</div>
+					
+									<div class="dash seconds_dash">
+										<div class="digit">0</div>
+										<div class="digit">0</div>
+										<span class="dash_title">секунд</span>
+									</div>
+								</div>
+								<!-- Countdown finish -->
+								
+								<form id="lead_crm1427" class="lead_crm_form lead_crm_ver main-form" method="post">
+							    <div class="lead_crm_inline client-phone-wrapper">
+						        <input name="phone" class="lead_crm_input client-phone" type="text" placeholder="Ваш номер телефона" data-validation-callbacks="not_empty" autocomplete="off">
+							    </div>
+							    <div style="text-align: center" class="lead_crm_inline_btn form-button-wrapper">
+						        <button id="send-form" class="lead_crm_submit form-button" name="submit" type="submit">Записаться на бесплатное пробное занятие</button>
+							    </div>
+								</form>
+								<p class="form-notice">Мы не передадим Ваши данные третьим лицам.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="invitation-notice">
+								<p>Количество мест в группе ограничено, успейте записаться!</p>
+								<p>При оплате тренировок в день пробного занятия - в подарок клубная футболка!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="photos">
+			<div class="photo-example-wrapper">
+				<div class="photo-example">
+					<img src="img/photogallery/gallery-image-2.jpg" alt="Photo">
+					<div class="photo-bg-layout"></div>
+				</div>
+				<div class="photo-example">
+					<img src="img/photogallery/gallery-image-3.jpg" alt="Photo">
+					<div class="photo-bg-layout"></div>
+				</div>
+				<div class="photo-example">
+					<img src="img/photogallery/gallery-image-4.jpg" alt="Photo">
+					<div class="photo-bg-layout"></div>
+				</div>
+				<div class="photo-example">
+					<img src="img/photogallery/gallery-image-5.jpg" alt="Photo">
+					<div class="photo-bg-layout"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="skills" class="skills">
+			<h2>Чему вы научитесь?</h2>
+			<p class="skills-description">Тренируясь в нашем клубе, Вы получите максимально полную боевую подготовку, которая включает в себя следующие аспекты.
+			</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="skills-item">
+							<p class="skills-item-title"><i class="my my_g"></i>Постановка ударов руками и ногами</p>
+							<p class="skills-item-text">Вы научитесь жестко бить, овладеете эффективной техникой нанесения прямых, боковых ударов и апперкотов, бэкфистов, научитесь бить ногами по всем уровням, поставите нокаутирующий удар.</p>
+						</div>
+						<div class="skills-item">
+							<p class="skills-item-title"><i class="my my_g"></i>Постановка ударов локтями и коленями</p>
+							<p class="skills-item-text">Локти и колени - грозное оружие ближнего боя, которое поможет Вам нокаутировать оппонента на ринге или нейтрализовать нападающего в замкнутом пространстве вроде лифта или тамбура электрички. Мы научим Вас наносить удары коленями и локтями, применять их в комбинации с другими ударами и работать в клинче.</p>
+						</div>
+						<div class="skills-item">
+							<p class="skills-item-title"><i class="my my_g"></i>Обучение комбинационной работе</p>
+							<p class="skills-item-text">Объединяя одиночные удары в серии, меняя уровни атаки и совмещая удары руками и ногами Вы будете представлять серьезную угрозу для соперника. Мы научим Вас комбинировать удары и работать серийно, для нанесения максимального урона Вашему противнику.</p>
+						</div>
+						<div class="skills-item">
+							<p class="skills-item-title"><i class="my my_g"></i>Бросковая техника и работа в партере</p>
+							<p class="skills-item-text">Тренируясь у нас, вы будете чувствовать себя уверенно как в стойке, так и в партере. Вы овладеете бросковой техникой, научитесь переводить бой в положение партер и проводить добивания.</p>
+						</div>
+						<div class="skills-item">
+							<p class="skills-item-title"><i class="my my_g"></i>Болевые, удушающие приемы</p>
+							<p class="skills-item-text">Хорошо подготовленный боец должен владеть как ударами, так и приемами борьбы. Мы обучим Вас эффективно работать в партере, выполнять различные удушающие и болевые приемы, чтобы досрочно заканчивать поединки.</p>
+						</div>
+						<div class="skills-item">
+							<p class="skills-item-title"><i class="my my_g"></i>Травмирующие удары, неспортивные приемы</p>
+							<p class="skills-item-text">В нашем клубе регулярно проводятся семинары, посвященные неспортивной технике ведения боя. На этих семинарах вы научитесь травмирующим приемам, таким как удары в пах с проносом, атака глаз, удары против сгиба коленного сустава и прочим запрещенным в ринге приемам, которые могут сохранить Вам жизнь и здоровье в случае нападения.</p>
+						</div>
+						<div class="skills-item">
+							<p class="skills-item-title"><i class="my my_g"></i>Групповой бой</p>
+							<p class="skills-item-text">Во время тренировок в нашем клубе Вы сможете принять участие в отработке групповых контактов в формате "1 против 2", "1 против 3", "2 против 5", "группа против группы". Это поможет Вам, в случае конфликта с группой лиц, чувствовать себя уверенно и эффективно применить свои навыки на практике, если придется.</p>
+						</div>
+						<div class="skills-item">
+							<p class="skills-item-title"><i class="my my_g"></i>Ножевой бой</p>
+							<p class="skills-item-text">У нас в клубе проводятся семинары по ножевому бою, на которых мы обучаем владению ножом, а также разбираем защиту от нападения с применением иного холодного оружия. Приобретенные на этих семинарах навыки помогут Вам сохранить жизнь и здоровье в случае черезвычайной ситуации.</p>
+						</div>
+						<div class="skills-item">
+							<p class="skills-item-title"><i class="my my_g"></i>Функциональная подготовка</p>
+							<p class="skills-item-text">Отдельная часть тренировки посвящается развитию физических возможностей Вашего тела. Мы уделяем внимание проработке всех групп мышц, растяжке, развитию аэробной и анаэробной выносливости, а также укреплению ударных поверхностей.</p>
+						</div>
+						<div class="skills-item">
+							<p class="skills-item-title"><i class="my my_g"></i>Психологическая подготовка</p>
+							<p class="skills-item-text">Наши тренеры уделяют внимание такому важному аспекту, как психологическая подготовка бойцов. Чтобы применить изученные приемы в бою, надо быть к этому готовым. В нашем клубе Вас подготовят к этому, чтобы в нужный момент Вы смогли защитить себя и своих близких.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="invitation invitation-2">
+			<div class="container">
+				<div class="invitation-wrapper">
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Приходите на бесплатное пробное занятие</h2>
+							<p class="invitation-description">Если Вам захотелось у нас тренироваться, запишитесь на занятия.<br> Это можно сделать заполнив форму справа или позвонив нам по телефону.</p>
+							<p>Количество мест в группе ограничено!</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="invitation-2-info">
+								<p>Расписание занятий:</p>
+								<p>Вторник 20:30 - 22:30,<br> 
+								Четверг 20:30 - 22:30<br>
+								Воскресенье (спарринг-день) 14:00</p>
+							</div>
+							<p class="invitation-2-price">Цена абонемента:<br> 3500 рублей в месяц</p>
+						</div>
+						<div class="col-md-6">
+							<div class="form-wrapper">
+								<p class="form-title">До окончания акции осталось:</p>
+								
+								<!-- Countdown start -->
+								<div id="countdown-dashboard-3" class="countdown-dashboard">
+									<div class="dash days_dash">
+										<div class="digit">0</div>
+										<span class="dash_title">дней</span>
+									</div>
+					
+									<div class="dash hours_dash">
+										<div class="digit">0</div>
+										<div class="digit">0</div>
+										<span class="dash_title">часов</span>
+									</div>
+					
+									<div class="dash minutes_dash">
+										<div class="digit">0</div>
+										<div class="digit">0</div>
+										<span class="dash_title">минут</span>
+									</div>
+					
+									<div class="dash seconds_dash">
+										<div class="digit">0</div>
+										<div class="digit">0</div>
+										<span class="dash_title">секунд</span>
+									</div>
+								</div>
+								<!-- Countdown finish -->
+								
+								<form id="lead_crm1427" class="lead_crm_form lead_crm_ver main-form" method="post">
+							    <div class="lead_crm_inline client-phone-wrapper">
+						        <input name="phone" class="lead_crm_input client-phone" type="text" placeholder="Ваш номер телефона" data-validation-callbacks="not_empty" autocomplete="off">
+							    </div>
+							    <div style="text-align: center" class="lead_crm_inline_btn form-button-wrapper">
+						        <button id="send-form" class="lead_crm_submit form-button" name="submit" type="submit">Записаться на бесплатное пробное занятие</button>
+							    </div>
+								</form>
+								<p class="form-notice">Мы не передадим Ваши данные третьим лицам.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="invitation-notice-2">
+								<p>При оплате тренировок в день пробного занятия - клубная футболка в подарок!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="photogallery" class="photogallery">
+			<h2>Фотографии тренировок</h2>
+
+			<!-- Photogallery -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						
+						<ul class="bxslider">
+						  <li><img src="img/photogallery/gallery-image-1.jpg" /></li>
+						  <li><img src="img/photogallery/gallery-image-2.jpg" /></li>
+						  <li><img src="img/photogallery/gallery-image-3.jpg" /></li>
+						  <li><img src="img/photogallery/gallery-image-4.jpg" /></li>
+						  <li><img src="img/photogallery/gallery-image-5.jpg" /></li>
+						  <li><img src="img/photogallery/gallery-image-6.jpg" /></li>
+						  <li><img src="img/photogallery/gallery-image-7.jpg" /></li>
+						</ul>
+						
+					</div><br/>
+				</div>
+			</div>
+			<!-- Photogallery -->
+
+		</section>
+
+		<section id="questions" class="questions">
+			<h2>Ответы на часто задаваемые вопросы</h2>
+			<div class="questions-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="questions-item">
+								<p class="questions-item-title"><i class="my my_g"></i>Мне 16 (21, 28, 34, 47) лет. Не поздно ли начинать заниматься рукопашным боем?</p>
+								<p class="questions-item-text">Не поздно, если вы подошли к этому осознанно. Если у Вас стандартный набор конечностей и нет серьезных медицинских противопоказаний - мы Вас ждем.</p>
+							</div>
+							<div class="questions-item">
+								<p class="questions-item-title"><i class="my my_g"></i>Есть ли возрастные ограничения для занятий у вас в зале?</p>
+								<p class="questions-item-text">Для тренировок нет. Физические нагрузки даются дозированно, индивидуально подходя к каждому ученику. Однако, если ваша цель – спортивные соревнования, для них ограничения по возрасту могут присутствовать по регламенту проведения турниров.</p>
+							</div>
+							<div class="questions-item">
+								<p class="questions-item-title"><i class="my my_g"></i>Что взять с собой на первую тренировку?</p>
+								<p class="questions-item-text">Если у Вас нет опыта и экипировки, то достаточно будет взять спортивную форму. Обувь не понадобится - зал оборудован мягким покрытием, и мы работаем босиком. На первом занятии тренер объяснит, что нужно будет приобрести в дальнейшем. Если Вы уже занимались единоборствами, то берите всю экипировку, которая у Вас есть: перчатки, накладки на голень, скакалку, капу, боксерские бинты.</p>
+							</div>
+							<div class="questions-item">
+								<p class="questions-item-title"><i class="my my_g"></i>Сразу будут бить?</p>
+								<p class="questions-item-text">Нет, не сразу. Сначала Вас научат, бить, защищаться, уходить от атак соперника  и перемещаться по рингу. Только после этого начнется контактная работа в парах, аккуратно и под присмотром инструктора.</p>
+							</div>
+							<div class="questions-item">
+								<p class="questions-item-title"><i class="my my_g"></i>Травм не будет? Голову не отобьют?</p>
+								<p class="questions-item-text">Если слушать тренера и строго следовать его указаниям, серьезных травм удастся избежать. В силу специфики этого вида спорта ученики не могут быть застрахованы от ушибов и синяков, но такие вещи, как сломанные пальцы/руки/ноги/зубы/.../носы и прочее - не случатся с Вами, если будете слушать инструктора.</p>
+							</div>
+							<div class="questions-item">
+								<p class="questions-item-title"><i class="my my_g"></i>Девушкам можно заниматься?</p>
+								<p class="questions-item-text">Не только можно, но и нужно! У нас уже тренируются девушки, им нравится, они довольно. Приходите и Вы!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="invitation invitation-3">
+			<div class="container">
+				<div class="invitation-wrapper">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="invitation-description">Если мы ответили на Ваши вопросы и Вам захотелось посетить наш зал - это можно сделать, заполнив форму или позвонив по телефону. <br> Если у Вас остались вопросы, Вы можете получить на них ответы, позвонив нам.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="invitation-2-info">
+								<p>Расписание занятий:</p>
+								<p>Вторник 20:30 - 22:30,<br> 
+								Четверг 20:30 - 22:30<br>
+								Воскресенье (спарринг-день) 14:00</p>
+							</div>
+							<p class="invitation-2-price">Цена абонемента:<br> 3500 рублей в месяц</p>
+						</div>
+						<div class="col-md-6">
+							<div class="form-wrapper">
+								<p class="form-title">До окончания акции осталось:</p>
+								
+								<!-- Countdown start -->
+								<div id="countdown-dashboard-4" class="countdown-dashboard">
+									<div class="dash days_dash">
+										<div class="digit">0</div>
+										<span class="dash_title">дней</span>
+									</div>
+					
+									<div class="dash hours_dash">
+										<div class="digit">0</div>
+										<div class="digit">0</div>
+										<span class="dash_title">часов</span>
+									</div>
+					
+									<div class="dash minutes_dash">
+										<div class="digit">0</div>
+										<div class="digit">0</div>
+										<span class="dash_title">минут</span>
+									</div>
+					
+									<div class="dash seconds_dash">
+										<div class="digit">0</div>
+										<div class="digit">0</div>
+										<span class="dash_title">секунд</span>
+									</div>
+								</div>
+								<!-- Countdown finish -->
+								
+								<form id="lead_crm1427" class="lead_crm_form lead_crm_ver main-form" method="post">
+							    <div class="lead_crm_inline client-phone-wrapper">
+						        <input name="phone" class="lead_crm_input client-phone" type="text" placeholder="Ваш номер телефона" data-validation-callbacks="not_empty" autocomplete="off">
+							    </div>
+							    <div style="text-align: center" class="lead_crm_inline_btn form-button-wrapper">
+						        <button id="send-form" class="lead_crm_submit form-button" name="submit" type="submit">Записаться на бесплатное пробное занятие</button>
+							    </div>
+								</form>
+								<p class="form-notice">Мы не передадим Ваши данные третьим лицам.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="invitation-notice-2">
+								<p>Помните! Количество мест в группах ограничено! Успейте забронировать себе место!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="address" class="address">
+			<h2>Как нас найти</h2>
+			<div class="container">
+				<div class="row">
+					<p>Мы находимся в пешей доступности от метро Нагорная. Наш зал расположен на территории комплекса &quot;Содружество&quot;. <br> Ждем всех желающих!</p>
+				</div>
+				<div class="row">
+					<div class="video-wrapper">
+						<iframe class="video-container" src="https://www.youtube.com/embed/3bZEv9Daj2o" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div class="map-wrapper">
+						<div id="map"></div>
+					</div>
+				</div>
+				
+				<footer>
+					<div class="row">
+						<p>До встречи на тренировках!</p>
+					</div>
+				</footer>
+
+			</div>
+		</section>
+
+	</div>
+
+	<div class="hidden"></div>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+	if (typeof jQuery == 'undefined') {
+	  document.write(unescape("%3Cscript src='/libs/jquery/jquery-2.1.4.min.js' type='text/javascript'%3E%3C/script%3E"));
+	}
+	</script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/countdown/jquery.lwtCountdown-1.0.js"></script>
+	<script src="libs/bxslider/jquery.bxslider.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<!-- <script type="text/javascript" src="http://cp.lead-crm.ru/forms/code/1427.js"></script> --> <!-- Скрипт формы --> 
+	
+	<script src="js/common.min.js"></script>
+	
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+	<!-- Yandex.Metrika counter -->
+	
+	<!-- <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter33963819 = new Ya.Metrika({
+                    id:33963819,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/33963819" style="position:absolute; left:-9999px;" alt="" /></div></noscript> -->
+
+<!-- /Yandex.Metrika counter -->
+
+</body>
+</html>
