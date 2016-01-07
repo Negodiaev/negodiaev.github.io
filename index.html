@@ -33,6 +33,11 @@
 				text-align: center;
 				/* -webkit-box-shadow: 5px 0 30px rgba(0, 0, 0, .5);
 				box-shadow: 5px 0 30px rgba(0, 0, 0, .5); */
+				-webkit-transform: skewX(-10deg);
+				-ms-transform: skewX(-10deg);
+				-o-transform: skewX(-10deg);
+				transform: skewX(-10deg);
+				cursor: default;
 			}
 
 			h2 {
@@ -49,6 +54,7 @@
 				-ms-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
 				-o-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
 				box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+				
 			}
 
 			.wrapper {
@@ -77,6 +83,10 @@
 				-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
 				box-shadow: 5px 5px 5px rgba(0, 0, 0, .25);
 				box-sizing: border-box;
+			}
+
+			table td > p {
+				cursor: default;
 			}
 			
 			td .done {
@@ -192,10 +202,10 @@
 			}			
 			
 			.ttl {
-				-webkit-animation: shadow 2.5s linear infinite;
-				-moz-animation: shadow 2.5s linear infinite;
-				-o-animation: shadow 2.5s linear infinite;
-				animation: shadow 2.5s linear infinite;
+				-webkit-animation: shadow 2.5s ease-in-out infinite;
+				-moz-animation: shadow 2.5s ease-in-out infinite;
+				-o-animation: shadow 2.5s ease-in-out infinite;
+				animation: shadow 2.5s ease-in-out infinite;
 			}
 
 		</style>
