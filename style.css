@@ -1,6 +1,6 @@
 body {
 	background: rgba(0, 0, 0, .25) url(img/dark.png);
-	font-family: 'PT Sans Narrow', 'Arial Narrow', sans-serif;
+	font-family: 'Cuprum', sans-serif;
 	font-size: 36px;
 	color: #ccc;
 }
@@ -92,6 +92,7 @@ td {
 }
 
 table td > p {
+	text-transform: uppercase;
 	cursor: default;
 }
 
