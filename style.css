@@ -76,7 +76,7 @@ td {
 	background-color: rgba(0, 0, 0, .25); /* Цвет фона ячеек */
 	text-align: center;
 	border: none;
-	border-radius: 10px;
+	border-radius: 5px;
 	overflow: hidden;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -109,7 +109,7 @@ td .done {
 	width: 100%;
 	height: 100%;
 	padding: 15px 0;
-	/*border-radius: 0 25px;*/
+	border-radius: 5px;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -158,7 +158,7 @@ td .done {
 	font-size: 15px;
 	line-height: 35px;
 	text-transform: uppercase;
-	box-shadow: inset 0 -3px 0 #c3c3c3;
+	box-shadow: inset 0 -4px 0 #a7a7a7;
 	color: #272727;
 	background: #f3f3f3;
 	opacity: 1;
