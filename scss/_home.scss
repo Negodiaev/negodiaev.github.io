@@ -1,0 +1,187 @@
+/* home */
+body {
+	background: rgba(0, 0, 0, .25) url(../images/dark.png);
+	font-family: 'Cuprum', sans-serif;
+	font-size: 36px;
+	color: #ccc;
+}
+
+a {
+	margin: 0 auto;
+	text-decoration: none;
+	color: rgba(255, 215, 0, .25);
+	transition: .2s;
+}
+
+h1, h2 {
+	font-size: 52px;
+	line-height: 1.1;
+	display: inline-block;
+	padding: 10px 50px;
+	border-radius: 7px;
+	text-transform: uppercase;
+	text-align: center;
+	transform: skewX(-10deg);
+	cursor: default;
+	color: #ccc;
+}
+
+h2 {
+	font-size: 40px;
+	margin: 50px 0 10px;
+	background-color: rgba(0, 0, 0, .25);
+	text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+}
+
+h3 {
+	margin: 24px 0;
+	font-size: 24px;
+	line-height: 2;
+	text-transform: uppercase;
+	color: #ccc;
+	background: #252525;
+	border-top: 2px solid rgba(100, 100, 100, .9);
+	border-bottom: 2px solid rgba(100, 100, 100, .9);
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 75px 0;
+	text-align: center;
+}
+
+.portfolio-items {
+	padding: 20px 0;
+	color: #ccc;
+}
+
+.portfolio-item {
+	position: relative;
+	margin: 0 auto 30px;
+	width: 300px;
+	height: 300px;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 0 15px rgba(15, 15, 15, 0.75);
+	transition: all .35s ease-in-out;
+	background-color: rgba(0, 0, 0, .25);
+}
+
+.portfolio-item > p {
+	line-height: 300px;
+	text-transform: uppercase;
+	cursor: default;
+}
+
+.div-shadow {
+	width: 100%;
+	height: 100%;
+	padding: 15px 0;
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+	opacity: .1;
+	box-sizing: border-box;
+	box-shadow: inset 0 0 0 3px rgba(225, 225, 225, 0.75);
+	transform: translateY(310px);
+	transition: all .25s ease-in-out;
+	background: #191919;
+}
+
+.div-shadow p {
+	margin: 18px 0;
+	padding: 0 15px;
+	font-size: 18px;
+	color: #ccc;
+	transform: translateX(310px);
+	transition: all .3s ease-in-out .2s;
+}
+
+.div-shadow .info-link {
+	width: 140px;
+	height: 35px;
+	display: inline-block;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -70px;
+	border-radius: 3px;
+	font-size: 15px;
+	line-height: 35px;
+	text-transform: uppercase;
+	box-shadow: inset 0 -4px 0 #a7a7a7;
+	color: #272727;
+	background: #f3f3f3;
+	opacity: 1;
+	transform: translateX(-310px);
+	transition: all .15s ease-in-out;
+}
+
+/*** Animation for portfolio elements ***/
+.portfolio-items .got:hover > .div-shadow {
+	transform: translate(0, 0);
+	opacity: .95;
+}
+.portfolio-items .got:hover > .div-shadow p {
+	transform: translateX(0);
+}
+.portfolio-items .got:hover > .div-shadow .info-link {
+	transform: translateX(0);
+	transition: all .2s ease-in-out .5s;
+}
+
+/*** Images previe w ***/
+#portfolio-item-1  { background: transparent url(../images/projects/prev-1.jpg)  50% 50% no-repeat; }
+#portfolio-item-2  { background: transparent url(../images/projects/prev-2.jpg)  50% 50% no-repeat; }
+#portfolio-item-3  { background: transparent url(../images/projects/prev-3.jpg)  50% 50% no-repeat; }
+#portfolio-item-4  { background: transparent url(../images/projects/prev-4.jpg)  50% 50% no-repeat; }
+#portfolio-item-5  { background: transparent url(../images/projects/prev-5.jpg)  50% 50% no-repeat; }
+#portfolio-item-6  { background: transparent url(../images/projects/prev-6.jpg)  50% 50% no-repeat; }
+#portfolio-item-7  { background: transparent url(../images/projects/prev-7.jpg)  50% 50% no-repeat; }
+#portfolio-item-8  { background: transparent url(../images/projects/prev-8.jpg)  50% 50% no-repeat; }
+#portfolio-item-9  { background: transparent url(../images/projects/prev-9.jpg)  50% 50% no-repeat; }
+#portfolio-item-10 { background: transparent url(../images/projects/prev-10.jpg) 50% 50% no-repeat; }
+#portfolio-item-11 { background: transparent url(../images/projects/prev-11.jpg) 50% 50% no-repeat; }
+
+.simple-line {
+	height: 2px;
+	margin-top: 50px;
+	box-shadow: inset 0 -1px 0 #333;
+	background-color: #999;
+}
+
+.contacts {
+	font-size: 26px;
+}
+.contacts ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.contacts p {
+	margin: 10px 0;
+	text-transform: none;
+	text-shadow: 1px 3px 7px rgba(0, 0, 0, 0.7);
+}
+.contacts a {
+	color: #ccc;
+}
+.contacts a:hover {
+	color: rgba(255, 255, 255, .3);
+}
+.contacts strong {
+	font-weight: bold;
+}
+
+@keyframes shadow {
+	0%, 100% { -webkit-box-shadow: 0 0 15px rgba(100, 100, 100, .7); } 
+	50% { box-shadow: 0 0 40px rgba(100, 100, 100, .75); }
+}			
+
+.ttl {
+	margin: 34px 0;
+	animation: shadow 2.5s ease-in-out infinite;
+}
