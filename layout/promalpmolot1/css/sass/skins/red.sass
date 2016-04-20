@@ -1,0 +1,174 @@
+@import "../bourbon/bourbon"
+
+$color: #c02b2b //Theme skin
+$text-color: rgba(48, 48, 48, 1)
+$bg-light: rgba(238, 238, 238, 1)
+$bg-dark: rgba(80, 80, 80, 1)
+$white: rgba(255, 255, 255, 1)
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+body
+	background-color: $bg-light
+	color: $text-color
+	+kerning(1)
+
+a
+	color: $color
+
+p
+	color: $text-color
+
+.color_element
+	color: $color
+.color_bg
+	background-color: $color
+.color_border
+	border-color: $color
+
+.section-line
+	background-color: $bg-dark
+.line-light
+	background-color: $bg-light
+.line-color
+	background-color: $color
+
+/* Start */
+
+// .highest-line
+// 	background-color: $text-color
+
+.top-line
+	p,
+	a
+		color: $text-color
+
+.icon-vkontakte:before
+	color: rgba(69, 102, 142, 1)
+.icon-twitter:before 
+	color: rgba(0, 172, 237, 1)
+.icon-facebook-squared:before
+	color: rgba(59, 89, 152, 1)
+
+.icon-vkontakte:hover,
+.icon-twitter:hover,
+.icon-facebook-squared:hover
+	color: $bg-dark
+	// color: rgba(69, 102, 142, 1) vk
+	// color: rgba(0, 172, 237, 1) tw
+	// color: rgba(59, 89, 152, 1) fb
+
+.menu-line
+	background-color: $text-color
+	a
+		color: $bg-light
+		span
+			color: $color
+	.icon-hammer:hover
+		color: $color
+.main-menu
+	ul
+		li
+			&:before
+				color: $bg-light
+			a
+				color: $bg-light
+				&:hover
+					color: $color	
+			.active-menu-link
+				color: $color
+
+.main-menu-button
+	background-color: $color
+	p
+		color: $bg-light
+
+.main-image
+	background-color: $bg-dark
+
+.dark-line
+	background-color: $bg-dark
+.light-line
+	background-color: $bg-light
+
+.contacts,
+.advantages
+	// background-color: $text-color
+	color: $bg-light
+	p
+		color: $bg-light
+	.advantage-icon
+		color: $color
+
+.services
+	h2, h3
+		color: $bg-dark
+	p
+		// color: $text-color
+	.service-icon
+		color: $bg-light
+		&:hover
+			color: $color
+
+.service-item-wrapper
+	background-color: $bg-dark
+.service-item-wrapper:before
+	border-bottom-color: $bg-dark
+.service-item-wrapper:after
+	border-top-color: $bg-dark
+
+.services-button
+	background-color: $bg-dark
+	color: $bg-light
+	&:hover
+		background-color: $color
+
+.service-description
+	background-color: $bg-light
+	h3, p
+		color: $text-color
+	.service-box-line
+		background-color: $bg-dark
+
+.works
+	background-color: $color
+	h2
+		color: $bg-light
+
+.works-item:hover
+	.works-item-content
+		background-color: #151515
+
+.work-description
+	background-color: $text-color
+	h3, p
+		color: $bg-light
+
+.contacts
+	input,
+	textarea
+		+kerning(2)
+
+.form-button
+	background-color: $color
+	&:hover
+		background-color: $text-color
+		@include transition-duration(.25s)
+
+.pre-footer-menu
+	a
+		color: $bg-dark
+		&:hover
+			color: $color
+
+footer
+	background-color: #151515
+	p, a
+		color: $bg-dark
+	a:hover
+		color: $bg-light
+	.icon-vkontakte:before,
+	.icon-twitter:before, 
+	.icon-facebook-squared:before
+		color: $bg-dark

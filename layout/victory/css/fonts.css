@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "KelsonSansRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/KelsonSansRegular/KelsonSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/KelsonSansRegular/KelsonSansRegular.woff") format("woff"), url("../fonts/KelsonSansRegular/KelsonSansRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "KelsonSansLight";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/KelsonSansLight/KelsonSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/KelsonSansLight/KelsonSansLight.woff") format("woff"), url("../fonts/KelsonSansLight/KelsonSansLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "KelsonSansBold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/KelsonSansBold/KelsonSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/KelsonSansBold/KelsonSansBold.woff") format("woff"), url("../fonts/KelsonSansBold/KelsonSansBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BicubikRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BicubikRegular/BicubikRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/BicubikRegular/BicubikRegular.woff") format("woff"), url("../fonts/BicubikRegular/BicubikRegular.ttf") format("truetype");
+}

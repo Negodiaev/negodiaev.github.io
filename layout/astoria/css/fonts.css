@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "RobotoCondensedRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.woff") format("woff"), url("../fonts/RobotoCondensedRegular/RobotoCondensedRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoCondensedBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoCondensedBold/RobotoCondensedBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoCondensedBold/RobotoCondensedBold.woff") format("woff"), url("../fonts/RobotoCondensedBold/RobotoCondensedBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Black-webfont";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoBlack/Roboto-Black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBlack/Roboto-Black-webfont.woff") format("woff"), url("../fonts/RobotoBlack/Roboto-Black-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MyriadProRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GeorgiaItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GeorgiaItalic/GeorgiaItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GeorgiaItalic/GeorgiaItalic.woff") format("woff"), url("../fonts/GeorgiaItalic/GeorgiaItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GeorgiaBoldItalic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GeorgiaBoldItalic/GeorgiaBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GeorgiaBoldItalic/GeorgiaBoldItalic.woff") format("woff"), url("../fonts/GeorgiaBoldItalic/GeorgiaBoldItalic.ttf") format("truetype");
+}

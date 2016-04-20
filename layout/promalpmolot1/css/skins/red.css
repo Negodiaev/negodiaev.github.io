@@ -1,0 +1,234 @@
+body {
+  background-color: #eeeeee;
+  color: #303030;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #c02b2b;
+}
+
+p {
+  color: #303030;
+}
+
+.color_element {
+  color: #c02b2b;
+}
+
+.color_bg {
+  background-color: #c02b2b;
+}
+
+.color_border {
+  border-color: #c02b2b;
+}
+
+.section-line {
+  background-color: #505050;
+}
+
+.line-light {
+  background-color: #eeeeee;
+}
+
+.line-color {
+  background-color: #c02b2b;
+}
+
+/* Start */
+.top-line p,
+.top-line a {
+  color: #303030;
+}
+
+.icon-vkontakte:before {
+  color: #45668e;
+}
+
+.icon-twitter:before {
+  color: #00aced;
+}
+
+.icon-facebook-squared:before {
+  color: #3b5998;
+}
+
+.icon-vkontakte:hover,
+.icon-twitter:hover,
+.icon-facebook-squared:hover {
+  color: #505050;
+}
+
+.menu-line {
+  background-color: #303030;
+}
+
+.menu-line a {
+  color: #eeeeee;
+}
+
+.menu-line a span {
+  color: #c02b2b;
+}
+
+.menu-line .icon-hammer:hover {
+  color: #c02b2b;
+}
+
+.main-menu ul li:before {
+  color: #eeeeee;
+}
+
+.main-menu ul li a {
+  color: #eeeeee;
+}
+
+.main-menu ul li a:hover {
+  color: #c02b2b;
+}
+
+.main-menu ul li .active-menu-link {
+  color: #c02b2b;
+}
+
+.main-menu-button {
+  background-color: #c02b2b;
+}
+
+.main-menu-button p {
+  color: #eeeeee;
+}
+
+.main-image {
+  background-color: #505050;
+}
+
+.dark-line {
+  background-color: #505050;
+}
+
+.light-line {
+  background-color: #eeeeee;
+}
+
+.contacts,
+.advantages {
+  color: #eeeeee;
+}
+
+.contacts p,
+.advantages p {
+  color: #eeeeee;
+}
+
+.contacts .advantage-icon,
+.advantages .advantage-icon {
+  color: #c02b2b;
+}
+
+.services h2, .services h3 {
+  color: #505050;
+}
+
+.services .service-icon {
+  color: #eeeeee;
+}
+
+.services .service-icon:hover {
+  color: #c02b2b;
+}
+
+.service-item-wrapper {
+  background-color: #505050;
+}
+
+.service-item-wrapper:before {
+  border-bottom-color: #505050;
+}
+
+.service-item-wrapper:after {
+  border-top-color: #505050;
+}
+
+.services-button {
+  background-color: #505050;
+  color: #eeeeee;
+}
+
+.services-button:hover {
+  background-color: #c02b2b;
+}
+
+.service-description {
+  background-color: #eeeeee;
+}
+
+.service-description h3, .service-description p {
+  color: #303030;
+}
+
+.service-description .service-box-line {
+  background-color: #505050;
+}
+
+.works {
+  background-color: #c02b2b;
+}
+
+.works h2 {
+  color: #eeeeee;
+}
+
+.works-item:hover .works-item-content {
+  background-color: #151515;
+}
+
+.work-description {
+  background-color: #303030;
+}
+
+.work-description h3, .work-description p {
+  color: #eeeeee;
+}
+
+.contacts input,
+.contacts textarea {
+  letter-spacing: 2px;
+}
+
+.form-button {
+  background-color: #c02b2b;
+}
+
+.form-button:hover {
+  background-color: #303030;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.pre-footer-menu a {
+  color: #505050;
+}
+
+.pre-footer-menu a:hover {
+  color: #c02b2b;
+}
+
+footer {
+  background-color: #151515;
+}
+
+footer p, footer a {
+  color: #505050;
+}
+
+footer a:hover {
+  color: #eeeeee;
+}
+
+footer .icon-vkontakte:before,
+footer .icon-twitter:before,
+footer .icon-facebook-squared:before {
+  color: #505050;
+}
