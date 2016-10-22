@@ -48,6 +48,9 @@ $(document).ready(function(){
 	$('.promo-slider').slick({
 		arrows: false,
 		touchMove: false,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		speed: 900
 	});
 
 	//offers slider
