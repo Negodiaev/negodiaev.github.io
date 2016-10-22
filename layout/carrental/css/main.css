@@ -51,7 +51,7 @@ a {
 
 .wrapper {
 	/*min-width: 993px;*/
-	max-width: 1680px;
+	/* max-width: 1680px; */
 }
 
 header {
@@ -59,6 +59,7 @@ header {
 	min-height: 668px;
 	position: relative;
 	font-family: "BebasBold";
+	background-size: cover;
 }
 
 header a {

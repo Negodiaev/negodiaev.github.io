@@ -430,6 +430,7 @@ h4 {
   min-height: 480px;
   padding: 0;
   z-index: 3;
+  background-size: cover;
 }
 
 .s_contacts .contacts_content {

@@ -1,0 +1,285 @@
+/* Responsive */
+@media screen and (max-width: 1199px) {
+	//Header
+	.logo-wrap {
+		padding-top: 0;
+		align-self: center;
+	}
+	.logo-descr {
+		display: block;
+		line-height: 1.2;
+	}
+
+	//Rooms
+	.rooms-list {
+		margin: 30px -5px 0;
+	}
+	.rooms-item {
+		padding: 0 10px;
+	}
+
+	//Statistic
+	.statistic-descr {
+		line-height: 1.4;
+	}
+
+	//Footer
+	.footer-col {
+		padding: 0 15px 0 0;
+	}
+	.footer-col-3 {
+		padding-right: 25px;
+	}
+
+}
+
+@media screen and (max-width: 1023px) {
+	//Header
+	.page-header {
+		padding-top: 27px;
+	}
+	.navigation {
+		position: absolute;
+		top: 26px; right: 10px;
+		// @include transition(all .2s ease);
+		&.open {
+			position: fixed;
+			// right: -205px;
+			.menu-toggle-icon {
+				background: $transparent;
+				&:before {
+					@include transform(rotate(45deg));
+				}
+				&:after {
+					@include transform(rotate(-45deg));
+				}
+			}
+		}
+	}
+	.menu-toggle {
+		display: block;
+		z-index: 20;
+	}
+	.menu {
+		position: fixed;
+		z-index: 15;
+		top: 0; right: -218px;
+		flex-flow: column;
+		justify-content: flex-start;
+		padding: 100px 20px 0 0;
+		@include size(240px 100%);
+		text-align: right;
+		@include linear-gradient(to top, #1f1f1f 0%, #1f1f1f 34px, $link-hover 100%, $fallback: $link-hover);
+		@include transition(all .2s ease);
+		&.open {
+			right: 0;
+			@include box-shadow(-5px 0 20px rgba($link-hover, 0.2));
+		}
+		a {
+			padding: 10px 20px;
+			color: $s;
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	//Booking
+	.booking {
+		position: relative;
+		top: 0; left: 0;
+		transform: none;
+	}
+	.booking-form-content {
+		flex-flow: row wrap;
+		padding: 15px 10px;
+	}
+	.booking-date,
+	.room-type {
+		margin-right: 0;
+		padding: 0 5px;
+	}
+	.booking-date {
+		flex: 1 1 50%;
+	}
+	.room-type {
+		flex: 3 1 66.6666%;
+	}
+	.btn-booking-wrap {
+		flex: 2 1 33.3333%;
+		padding: 0 5px;
+	}
+	.btn-booking {
+		width: 100%;
+	}
+	.booking-date-field,
+	.room-type-field {
+		width: 100%;
+	}
+
+	//Offers
+	.offers {
+		padding-top: 60px;
+	}
+
+	//Rooms
+	.rooms {
+		padding-bottom: 40px;
+	}
+	.rooms-item-title {
+		margin: 10px 0 5px;
+		line-height: 1.2;
+	}
+
+	//Footer
+	.main {
+		padding-bottom: 0;
+		min-height: auto;
+	}
+	.page-footer {
+		margin-top: 0;
+		height: auto;
+
+		padding-bottom: 70px;
+	}
+	.page-footer-content {
+		flex-flow: row wrap;
+	}
+	.footer-col {
+		margin-bottom: 30px;
+	}
+	.footer-col-1,
+	.footer-col-3 {
+		flex: 2 1 66.6666%;
+	}
+	.footer-col-2,
+	.footer-col-4 {
+		flex: 1 2 33.3333%;
+	}
+
+	.footer-col-1 { order: 2; }
+	.footer-col-2 { order: 1; }
+	.footer-col-3 { order: 4; }
+	.footer-col-4 { order: 3; }
+}
+
+@media screen and (max-width: 879px) {
+	//Rooms
+	.rooms-item {
+		flex: 1 1 50%;
+		max-width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	//Base styles
+	h2 {
+		font-size: rem(45);
+		line-height: 1.2;
+	}
+	h3 {
+		font-size: rem(34);
+	}
+	h4 {
+		font-size: rem(22);
+	}
+	h5 {
+		font-size: rem(18);
+	}
+	.section-title {
+		margin-bottom: 5px;
+		line-height: 1;
+	}
+
+	//Booking
+	.booking-date-label,
+	.room-type-label,
+	.booking-date-input,
+	.room-type-select,
+	.btn-booking {
+		font-size: 16px;
+	}
+
+	//Statistic
+	.statistic-content-inner {
+		margin-right: 185px;
+	}
+	.statistic-descr {
+		font-size: 16px;
+	}
+
+	//Footer
+	.footer-col-1,
+	.footer-col-3 {
+		flex: 3 2 60%;
+	}
+	.footer-col-2,
+	.footer-col-4 {
+		flex: 2 3 40%;
+	}
+
+}
+
+@media screen and (max-width: 543px) {
+	//Rooms
+	.rooms-list {
+		flex-flow: column wrap;
+	}
+	.rooms-item {
+		flex: 1 1 100%;
+	}
+
+	//Footer
+	.footer-col {
+		flex: 1 1 50%;
+	}
+
+	.footer-col-1 { order: 3; }
+	.footer-col-2 { order: 1; }
+	.footer-col-3 { order: 4; }
+	.footer-col-4 { order: 2; }
+
+
+}
+
+@media screen and (max-width: 479px) {
+	//Booking
+	.booking-form-content {
+		flex-flow: column wrap;
+	}
+	.booking-date,
+	.room-type,
+	.btn-booking-wrap {
+		flex: 1 1 100%;
+		width: 100%;
+	}
+	.btn-booking-wrap {
+		margin-top: 20px;
+	}
+
+	//Statistic
+	.statistic-content {
+		&:after {
+			display: none;
+		}
+	}
+	.statistic-content-inner {
+		margin-right: 30px;
+	}
+
+	//Footer
+	.page-footer-content {
+		flex-flow: column wrap;
+	}
+
+	.footer-col-1 { order: 1; }
+	.footer-col-2 { order: 2; }
+	.footer-col-3 { order: 3; }
+	.footer-col-4 { order: 4; }
+
+	.login-form {
+		max-width: 100%;
+	}
+
+}
