@@ -1,0 +1,80 @@
+/* Profile page */
+.profile-notice {
+	position: relative;
+	margin-bottom: 42px;
+	padding: 13px 20px;
+	max-width: 255px;
+	line-height: 28 / 21 * 1;
+	background: $bg;
+}
+
+.profile-notice-name {
+	font-weight: $font-bold;
+}
+
+.profile-tooltip-btn {
+	top: -23px; right: -20px;
+}
+
+.profile-tooltip {
+	bottom: 130%; right: -135px;
+	width: 160px;
+	&:before {
+		display: none;
+	}
+}
+
+.profile-info-title {
+	margin-bottom: 7px;
+	padding-left: 115px;
+}
+
+.profile-info-table {
+	margin-bottom: 50px;
+	table {
+		width: 100%;
+		td {
+			padding: 25px 25px 3px 0;
+			border-bottom: 2px solid $bg;
+		}
+		.col-1 {
+			width: 15%;
+			font-weight: $font-bold;
+			border-color: transparent;
+		}
+		.col-2 {
+			width: 80%;
+		}
+		.col-3 {
+			padding-right: 0;
+			width: 5%;
+			text-align: right;
+		}
+	}
+}
+
+.change-info-btn {
+	@include size(18px 17px);
+	border: none;
+	outline: none;
+	background: url(../images/icons/icon-pen.png) 50% 50% no-repeat;
+}
+
+.notification-settings-title {
+	margin-bottom: 50px;
+	padding-left: 75px;
+}
+
+.notification-settings-content {
+	margin-bottom: 100px;
+	max-width: 590px;
+	.notification-label {
+		margin-bottom: 2px;
+		padding: 12px 75px 16px 10px;
+		background: $bg;
+		&:before,
+		&:after {
+			margin: 10px 12px 0 0;
+		}
+	}
+}

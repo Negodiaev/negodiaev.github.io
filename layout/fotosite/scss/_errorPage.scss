@@ -1,0 +1,28 @@
+/* 404 error page */
+.error-page {
+	padding: 50px 15px;
+	min-height: 100%;
+	background: url(../images/bg/bg-error-page.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.error-page-content {
+	margin: 0 auto;
+	max-width: 790px;
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+.error-page-message {
+	margin-bottom: 10px;
+	line-height: 34 / 21 * 1;
+	color: $dgr;
+}
+
+.error-page-btn {
+	margin-bottom: 15px;
+	padding: 8px 36px;
+	box-shadow: 0 5px 10px rgba(0, 0, 2, 0.21);
+}

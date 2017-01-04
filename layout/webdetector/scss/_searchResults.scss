@@ -1,0 +1,173 @@
+/* Search results page */
+.search-results {
+	padding-top: 15px;
+}
+
+.search-results-info {
+	padding-left: 20px;
+	line-height: 2;
+	color: $lt;
+	span {
+		font-weight: $font-bold;
+		color: $text;
+	}
+}
+
+.sort {
+	margin-bottom: 5px;
+	padding: 5px 20px;
+	color: $lt;
+	background: $bg;
+}
+
+.sort-inner {
+	float: left;
+}
+
+.sort-title {
+	vertical-align: middle;
+}
+
+.sort-links {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 12px;
+	li {
+		margin-left: 5px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.sort-link {
+	position: relative;
+	display: block;
+	padding: 0 25px;
+	border: 1px solid $slgr;
+	border-radius: 25px;
+	background: $w;
+	span {
+		vertical-align: middle;
+		line-height: 28 / 16 * 1;
+	}
+	i {
+		&:before {
+			vertical-align: middle;
+			margin-left: 22px;
+			font-size: rem(22);
+			line-height: 28 / 22 * 1;
+			font-weight: $font-black;
+			color: $text;
+		}
+	}
+}
+
+.sort-pagination {
+	float: right;
+	margin-left: 50px;
+}
+
+.sort-scl {
+	float: right;
+}
+
+.sort-scl-title {
+	vertical-align: middle;
+}
+
+.sort-scl-links {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+	li {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	a {
+		padding: 0 5px;
+		font-size: rem(16);
+		i {
+			&:before {
+				font-size: rem(24);
+				line-height: 28 / 24 * 1;
+				@include transition(color $df);
+			}
+			&:hover {
+				color: $text;
+			}
+		}
+		.icon-gpl {
+			margin-right: 7px;
+		}
+	}
+}
+
+//Product
+.products-container {
+	margin: 0 -10px;
+
+	display: none;
+	
+	&.active {
+		display: block;
+	}
+}
+
+.product-wrap {
+	float: left;
+	width: 20%;
+	padding: 0 10px;
+}
+
+.product {
+	margin: 0 auto 5px;
+	min-width: 190px;
+	// max-width: 250px;
+	border: 1px solid $slgr;
+	border-radius: 10px;
+	background: $w;
+}
+
+.product-img {
+	overflow: hidden;
+	padding: 10px;
+	height: 200px;
+	text-align: center;
+	a {
+		display: block;
+	}
+}
+
+.product-info {
+	position: relative;
+	padding: 10px;
+	border-radius: 0 0 10px 10px;
+	background: $bg;
+}
+
+.product-name {
+	height: 50px;
+	line-height: 1;
+	a {
+		color: $text;
+	}
+}
+
+.product-price {
+	font-weight: $font-bold;
+}
+
+.product-shop {
+	a {
+		color: $p;
+	}
+}
+
+.product-notice {
+	position: absolute;
+	bottom: 30px; right: 10px;
+	width: 80px;
+	font-size: rem(12);
+	text-align: right;
+}

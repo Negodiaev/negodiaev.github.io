@@ -1,0 +1,246 @@
+/* lightSlider styles */
+.lSSlideOuter {
+		overflow: hidden;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none
+}
+.lightSlider:before, .lightSlider:after {
+		content: " ";
+		display: table;
+}
+.lightSlider {
+		overflow: hidden;
+		margin: 0;
+}
+.lSSlideWrapper {
+		max-width: 100%;
+		// overflow: hidden;
+		position: relative;
+		border: 1px solid $slgr;
+}
+.lSSlideWrapper > .lightSlider:after {
+		clear: both;
+}
+.lSSlideWrapper .lSSlide {
+		-webkit-transform: translate(0px, 0px);
+		-ms-transform: translate(0px, 0px);
+		transform: translate(0px, 0px);
+		-webkit-transition: all 1s;
+		-webkit-transition-property: -webkit-transform,height;
+		-moz-transition-property: -moz-transform,height;
+		transition-property: transform,height;
+		-webkit-transition-duration: inherit !important;
+		transition-duration: inherit !important;
+		-webkit-transition-timing-function: inherit !important;
+		transition-timing-function: inherit !important;
+		.lslide {
+			overflow: hidden;
+			text-align: center;
+			cursor: pointer;
+			
+			//test vertical align
+			position: relative;
+			img {
+				position: absolute;
+				top: 50%; left: 50%;
+				@include transform(translate(-50%, -50%));
+				max-height: 98%;
+			}
+			//test vertical align
+
+		}
+}
+.lSSlideWrapper .lSFade {
+		position: relative;
+}
+.lSSlideWrapper .lSFade > * {
+		position: absolute !important;
+		top: 0;
+		left: 0;
+		z-index: 9;
+		margin-right: 0;
+		width: 100%;
+}
+.lSSlideWrapper.usingCss .lSFade > * {
+		opacity: 0;
+		-webkit-transition-delay: 0s;
+		transition-delay: 0s;
+		-webkit-transition-duration: inherit !important;
+		transition-duration: inherit !important;
+		-webkit-transition-property: opacity;
+		transition-property: opacity;
+		-webkit-transition-timing-function: inherit !important;
+		transition-timing-function: inherit !important;
+}
+.lSSlideWrapper .lSFade > *.active {
+		z-index: 10;
+}
+.lSSlideWrapper.usingCss .lSFade > *.active {
+		opacity: 1;
+}
+/** /!!! End of core css Should not edit !!!/**/
+
+/* Pager */
+.lSSlideOuter .lSPager.lSpg {
+		margin: 10px 0 0;
+		padding: 0;
+		text-align: center;
+}
+.lSSlideOuter .lSPager.lSpg > li {
+		cursor: pointer;
+		display: inline-block;
+		padding: 0 5px;
+}
+.lSSlideOuter .lSPager.lSpg > li a {
+		background-color: #222222;
+		border-radius: 30px;
+		display: inline-block;
+		height: 8px;
+		overflow: hidden;
+		text-indent: -999em;
+		width: 8px;
+		position: relative;
+		z-index: 99;
+		-webkit-transition: all 0.5s linear 0s;
+		transition: all 0.5s linear 0s;
+}
+.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
+		background-color: #428bca;
+}
+.lSSlideOuter .media {
+		opacity: 0.8;
+}
+.lSSlideOuter .media.active {
+		opacity: 1;
+}
+/* End of pager */
+
+/** Gallery */
+.lSSlideOuter .lSPager.lSGallery {
+		list-style: none outside none;
+		padding-left: 0;
+		margin: 0;
+		overflow: hidden;
+		transform: translate3d(0px, 0px, 0px);
+		-moz-transform: translate3d(0px, 0px, 0px);
+		-ms-transform: translate3d(0px, 0px, 0px);
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		-o-transform: translate3d(0px, 0px, 0px);
+		-webkit-transition-property: -webkit-transform;
+		-moz-transition-property: -moz-transform;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+}
+.lSSlideOuter .lSPager.lSGallery li {
+		overflow: hidden;
+		// -webkit-transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+		// transition: border-radius 0.12s linear 0s 0.35s linear 0s;
+		margin-top: 23px;
+}
+.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover {
+		img {
+			border-color: $slgr;
+		}
+}
+.lSSlideOuter .lSPager.lSGallery img {
+		display: block;
+		height: auto;
+		max-width: 100%;
+		border: 1px solid $bg;
+}
+.lSSlideOuter .lSPager.lSGallery:before, .lSSlideOuter .lSPager.lSGallery:after {
+		content: " ";
+		display: table;
+}
+.lSSlideOuter .lSPager.lSGallery:after {
+		clear: both;
+}
+/* End of Gallery*/
+
+/* slider actions */
+.lSAction > a {
+		width: 22px;
+		display: block;
+		top: 50%;
+		height: 22px;
+		background-image: url('../images/controls.png');
+		cursor: pointer;
+		position: absolute;
+		z-index: 99;
+		margin-top: -10px;
+		opacity: 0.8;
+		-webkit-transition: opacity 0.35s linear 0s;
+		transition: opacity 0.35s linear 0s;
+}
+.lSAction > a:hover {
+		opacity: 1;
+}
+.lSAction > .lSPrev {
+		background-position: 0 0;
+		left: 10px;
+}
+.lSAction > .lSNext {
+		background-position: -32px 0;
+		right: 10px;
+}
+.lSAction > a.disabled {
+		pointer-events: none;
+}
+.cS-hidden {
+		height: 1px;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		overflow: hidden;
+}
+
+
+/* vertical */
+.lSSlideOuter.vertical {
+		position: relative;
+}
+.lSSlideOuter.vertical.noPager {
+		padding-right: 0px !important;
+}
+.lSSlideOuter.vertical .lSGallery {
+		position: absolute !important;
+		left: 0;
+		top: 0;
+}
+.lSSlideOuter.vertical .lightSlider > * {
+		width: 100% !important;
+		max-width: none !important;
+}
+
+/* vertical controlls */
+.lSSlideOuter.vertical .lSAction > a {
+		left: -53px;
+		margin-left: -14px;
+		margin-top: 0;
+		border-radius: 50%;
+		background-color: $w;
+}
+.lSSlideOuter.vertical .lSAction > .lSNext {
+		background-position: 27px -29px;
+		bottom: 0;
+		top: auto;
+}
+.lSSlideOuter.vertical .lSAction > .lSPrev {
+		background-position: 2px -29px;
+		bottom: auto;
+		top: 0;
+}
+/* vertical */
+
+@media screen and (max-width: 880px) {
+	.lSSlideOuter.vertical .lSAction > a {
+		left: -65px;
+	}
+}

@@ -1,0 +1,17 @@
+/* Grid */
+.main {
+	min-height: 100%;
+	overflow: hidden;
+	padding-bottom: $footer;
+}
+
+
+
+@media screen and (min-width: 1367px) {
+	.xl-5-col {
+		width: 20%;
+	}
+	.xl-6-col {
+		width: 16.6666%;
+	}
+}

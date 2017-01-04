@@ -1,0 +1,809 @@
+@import "bourbon/bourbon"
+
+/**************************/
+/********* COLORS *********/
+/**************************/
+$main-color: rgba(66, 143, 163, 1)
+$text-color: rgba(51, 51, 51, 1)
+$menu-button-bg: rgba(78, 150, 169, 1)
+$white-color: rgba(255, 255, 255, 1)
+
+/**************************/
+/********* MIXINS *********/
+/**************************/
+@mixin transition($args...)
+  -webkit-transition: $args
+  -moz-transition: $args
+  -ms-transition: $args
+  -o-transition: $args
+  transition: $args
+  // Usage: @include transition(color .3s ease);
+
+@mixin anim-delay($args...)
+	-webkit-animation-delay: $args
+	-o-animation-delay: $args
+	animation-delay: $args
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px
+
+
+/***************************/
+/****** COMMON STYLES ******/
+/***************************/
+input
+	text-align: center
+	outline: none
+
+.main-form::-webkit-input-placeholder 
+	color: $white-color
+	opacity: 1
+	text-align: center
+.main-form:-moz-placeholder 
+	color: $white-color
+	opacity: 1
+	text-align: center
+.main-form::-moz-placeholder 
+	color: $white-color
+	opacity: 1
+	text-align: center
+.main-form:-ms-input-placeholder 
+	color: $white-color
+	opacity: 1
+	text-align: center
+
+.offers-form::-webkit-input-placeholder 
+	color: rgba(100, 100, 100, 1)
+	opacity: 1
+	text-align: center
+.offers-form:-moz-placeholder 
+	color: rgba(100, 100, 100, 1)
+	opacity: 1
+	text-align: center
+.offers-form::-moz-placeholder 
+	color: rgba(100, 100, 100, 1)
+	opacity: 1
+	text-align: center
+.offers-form:-ms-input-placeholder 
+	color: rgba(100, 100, 100, 1)
+	opacity: 1
+	text-align: center
+
+body
+	font-family: "MinionProRegular", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.2857
+	-webkit-font-smoothing: antialised
+	background: $white-color
+	color: $text-color
+	overflow-x: hidden
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: $text-color
+	outline: none
+body input:required:valid,
+body textarea:required:valid
+	color: green
+	outline: none
+
+.hidden
+	display: none
+
+.clearfix
+	display: block
+	&:after
+		content: ""
+		display: block
+		clear: both
+		visibility: hidden
+		line-height: 0
+		height: 0
+		margin: 0
+		padding: 0
+
+
+/***************************/
+/******* MAIN STYLES *******/
+/***************************/
+header,
+section,
+footer
+	min-width: 990px
+
+.wrapper
+	width: 990px
+	padding: 0 25px
+	margin: 0 auto
+	box-sizing: border-box
+
+a
+	text-transform: uppercase
+	text-decoration: none
+
+h1, h2
+	font-size: 60px
+	line-height: 1
+	text-align: center
+	font-weight: 400
+h1	
+	font-family: "MinionProSemiBold"
+	text-transform: uppercase
+	margin: 25px 0 0
+h2, h3, h4, h5
+	font-family: "MinionProRegular"
+	font-weight: 400
+h3
+	font-size: 30px
+h4
+	font-size: 22px
+	margin: 0
+h5
+	font-size: 18px
+	line-height: 1
+	margin-bottom: 20px
+
+.section-double-line
+	width: 100%
+	height: 2px
+	.first-line-part
+		height: 1px
+		@include background-image(linear-gradient(to right, rgba(210, 210, 210, 0.1) 0%, rgba(210, 210, 210, 1) 50%, rgba(210, 210, 210, 0.1) 100%))
+	.second-line-part
+		height: 1px
+		@include background-image(linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.1) 100%))
+
+.section-dotted-line
+	background-color: transparent
+	border-top: 1px dashed rgba(188, 188, 188, .7)
+	border-bottom: 1px dashed #fff
+	width: 75%
+
+
+/***************************/
+/********** HEADER *********/
+/***************************/
+header
+	background: url(../img/backgrounds/header-bg.png) top center no-repeat
+	color: $main-color
+	text-align: center
+	padding-top: 20px
+	.topline
+		position: relative
+		span
+			color: rgba(153, 153, 153, 1)
+			font-size: 22px
+			line-height: 24px
+			+kerning(9)
+		.bow
+			background: url(../img/sprite.png) -11px -11px no-repeat
+			width: 38px
+			height: 15px
+			margin: 20px auto
+		.address-container
+			color: $text-color
+			width: 172px
+			position: absolute
+			right: 0
+			top: 0
+			p
+				font-family: "OpenSansRegular"
+				margin: 0
+			a
+				background-color: $menu-button-bg
+				color: $white-color
+				display: block
+				font: 12px/30px "OpenSansRegular"
+				width: 100%
+				margin: 15px 0
+				text-shadow: 0 0 72.2px rgba(251, 251, 251, 0.75)
+			.address
+				font-size: 12px
+
+	.header-content
+		margin-top: 35px
+		.header-content-line
+			width: 100%
+			height: 1px
+			background: rgba(227, 227, 227, 1)
+		.header-content-name
+			color: $text-color
+			background: $white-color
+			font-size: 24px
+			line-height: 22px
+			text-transform: uppercase
+			padding: 0 25px
+			width: 412px
+			margin: -12px auto 0
+		
+		.main-menu
+			background: rgba(228, 228, 228, 1) url(../img/backgrounds/menu-bg.png) 50% 50% no-repeat
+			background-size: cover
+			margin-top: 50px
+			ul
+				list-style-type: none
+				margin: 0
+				padding: 0
+				position: relative
+				background-color: transparent
+				text-align: left
+				li
+					display: inline-block
+					margin-right: 1px
+					a
+						color: $text-color
+						display: block
+						font-size: 16px
+						padding: 20px 47px 15px
+						&:last-child
+							padding: 20px 46px 15px
+
+					.active-item
+						background: $menu-button-bg
+						color: $white-color
+						@include transition(0.3s ease)
+				.sliding-line
+					background: $main-color
+					height: 1px
+					position: absolute
+					bottom: -10px
+					left: 0
+		
+		.header-info
+			background: $text-color url(../img/backgrounds/header-info.jpg) top center no-repeat
+			color: $white-color
+			width: 100%
+			height: 440px
+			margin-top: 40px
+			padding-top: 80px
+			box-sizing: border-box
+			.header-info-content
+				width: 325px
+				margin: 0 auto
+				p
+					margin: 0
+					line-height: 1
+					&:first-child
+						font-size: 22px
+						text-transform: uppercase
+						word-spacing: 90px
+						text-align: left
+					&:nth-child(2)
+						font-size: 93px
+						text-transform: lowercase
+						word-spacing: 60px
+						margin-top: -25px
+						span
+							color: $main-color
+					&:nth-child(3)
+						color: $main-color
+						font-size: 80px
+						margin-top: 20px
+				.day-number
+					color: $main-color
+					font: 119px "Sylfaen"
+					position: relative
+					top: -235px
+					left: -23px
+				.invitation
+					font-size: 20px
+					margin-top: -110px
+
+				.main-form
+					margin-top: 25px
+					input
+						color: $white-color
+						background: rgba(255, 255, 255, .03)
+						font: 12px "OpenSansLight"
+						text-align: center
+						padding: 6px 0 4px
+						width: 150px
+						box-sizing: border-box
+						border: 1px solid rgba(255, 255, 255, .15)
+						&:first-child
+							margin-right: 15px
+					.main-form-button
+						background-color: $main-color
+						margin-top: 25px
+						padding: 11px 0 8px
+						width: 100%
+						font-size: 24px
+						text-transform: uppercase
+						border: none
+						text-shadow: 0 0 134px rgba(251, 251, 251, 0.75)
+
+
+/***************************/
+/********* SERVICES ********/
+/***************************/
+.services
+	background: url(../img/backgrounds/services-bg.jpg) top center no-repeat
+	text-align: center
+	margin-top: 24px
+	padding-bottom: 10px
+	.services-topline
+		border-top: 3px solid $main-color
+	.services-offer-free
+		font: 25px/37px "MinionProRegular"
+		color: rgba(102, 102, 102, 1)
+		margin: 35px 0 55px
+		span
+			color: $main-color
+			font-size: 36px
+			font-weight: 700
+			text-transform: uppercase
+	.services-container
+		margin-bottom: 20px
+		.services-item
+			width: 33.33%
+			float: left
+			margin-bottom: 20px
+			.services-image-wrapper
+				width: 220px
+				height: 220px
+				border-radius: 50%
+				margin: 0 auto
+				overflow: hidden
+				img
+					width: 100%
+					height: auto
+			.service-name
+				font: 18px/16px "MinionProBoldItalic"
+				width: 220px
+				margin: 15px auto
+	.services-description
+		width: 90%
+		margin: 25px auto 15px
+		line-height: 20px
+
+
+/***************************/
+/******* SUIT CHOICE *******/
+/***************************/
+.suit-choice
+	background: url(../img/backgrounds/suit-choice-bg.jpg) 0 270px no-repeat
+	.suit-choice-topline
+		border-top: 10px solid $main-color
+	.suit-set-container
+		text-align: center
+		margin: 45px 0
+		.suit-set-item
+			float: left
+			margin-right: 27px
+			position: relative
+			&:last-child
+				margin-right: 0
+			.suit-item-image
+				background: $white-color
+				width: 164px
+				height: 235px
+				line-height: 235px
+				border: 1px solid rgb(237, 237, 237)
+				img
+					vertical-align: middle
+			.suit-item-name
+				font: 12px "MinionProSemiBold"
+				text-transform: uppercase
+			.add-circle
+				background: url(../img/sprite.png) -74px -7px no-repeat
+				width: 41px
+				height: 41px
+				position: absolute
+				top: 35%
+				right: -32px
+				border-radius: 50%
+				z-index: 3
+			.last-circle
+				top: 33%
+	.price-button
+		background-color: $main-color
+		color: $white-color
+		width: 550px
+		margin: 0 auto
+		position: relative
+		top: -30px
+		padding: 9px 0 10px
+		text-shadow: 0 0 134px rgba(251, 251, 251, 0.75)
+		font-size: 30px
+		text-align: center
+	h2
+		margin-top: 15px
+
+.suits-slider
+	text-align: center
+	margin-bottom: 50px
+	max-width: 940px
+	width: 100%
+	.slider-navigate-button
+		background: url(../img/sprite.png) no-repeat
+		width: 13px
+		height: 20px
+		position: relative
+		cursor: pointer
+	.previous-button
+		background-position: -245px -86px
+		top: 180px
+		left: 20px
+		&:hover
+			background-position: -245px -205px
+	.next-button
+		background-position: -245px -149px
+		float: right
+		top: 160px
+		right: 23px
+		&:hover
+			background-position: -245px -268px		
+	
+	.hider-block-wrapper
+		overflow: hidden
+		position: relative
+		margin: 10px 47px
+		.hider-block	
+			height: 365px
+			width: 10000px
+			position: relative
+			position: relative
+			.suits-slider-item
+				float: left
+				width: 160px
+				margin-right: 10px
+				&:last-child
+					margin-right: 0
+				a
+					color: $main-color
+					font-family: "MinionProSemiBold"
+					text-transform: none
+					text-decoration: underline
+					cursor: pointer
+					@include transition(.5s)
+				.suits-slider-image
+					margin: 17px 0 3px
+					img
+						width: 100%
+						border: 1px solid $white-color
+						@include transition(.5s)
+				
+				p
+					margin: 0
+					line-height: 16px
+					cursor: default
+					span
+						font-family: "MinionProSemiBold"
+				.choose-suit
+					background-color: rgba(255, 255, 255, 0.29)
+					box-shadow: inset 0 0 0 rgba(125, 150, 156, 0.38)
+					border: 1px solid rgba(231, 235, 236, 1)
+					margin-top: 7px
+					width: 100%
+					text-transform: uppercase
+					padding: 5px
+					font-family: "Sylfaen"
+					cursor: pointer
+					@include transition(.35s)
+
+
+/***************************/
+/******* OTHER GOODS *******/
+/***************************/
+.other-goods
+	background: url(../img/backgrounds/other-goods-bg.png) top center no-repeat
+	.wrapper
+		text-align: center
+		h2
+			margin-top: 35px
+		.goods-category
+			display: inline-block
+			margin-right: 40px
+			&:last-child
+				margin-right: 0
+			.category-image-wrapper
+				border: 10px solid rgba(66, 143, 163, 0.01)
+				width: 190px
+				height: 190px
+				line-height: 190px
+				border-radius: 50%
+				margin-bottom: 15px
+				box-sizing: border-box
+				cursor: pointer
+				@include transition(.35s)
+				img
+					vertical-align: middle
+			.category-name
+				color: $main-color
+				text-transform: none
+				text-decoration: underline
+				cursor: pointer
+				@include transition(.2s)
+
+		h3
+			overflow: hidden
+			margin-bottom: 0
+			&:before,
+			&:after
+				content: ""
+				background: $main-color
+				display: inline-block
+				vertical-align: middle
+				box-sizing: border-box
+				width: 100%
+				height: 10px
+				border: solid transparent
+			  border-width: 0 10px
+			&:before
+				margin: 0 40px 0 -100%
+			&:after
+				margin: 0 -100% 0 40px
+
+		.goods-slider
+			margin-bottom: 10px
+			.previous-button
+				top: 115px
+				left: 15px
+			.next-button
+				top: 95px
+				right: 18px
+			.hider-block-wrapper
+				margin: 0 56px
+				.hider-block
+					height: 300px
+					.goods-slider-item
+						margin-right: 6px
+						.goods-slider-image
+							border: 1px solid rgba(231, 231, 231, 1)
+							height: 200px
+							line-height: 200px
+							box-sizing: border-box
+							margin: 0 0 10px
+							@include transition(.1s)
+							img
+								width: auto
+								vertical-align: middle
+						.slider-item-cat
+							color: rgba(102, 102, 102, 1)
+						.slider-item-price
+							font: 18px "MinionProSemiBold"
+							display: block
+							margin-top: 13px
+
+
+/***************************/
+/******* SMOKING RENT ******/
+/***************************/
+.smoking-rent
+	background: url(../img/backgrounds/smoking-rent-bg.png) top center no-repeat
+	text-align: center
+	.rent-items-container
+		position: relative
+		top: -30px
+		.rent-item
+			float: left
+			width: 21%
+			margin-right: 5%
+			&:last-child
+				margin-right: 0
+			.number-circle
+				background: $text-color
+				color: $white-color
+				font: 30px/45px "Sylfaen"
+				width: 45px
+				height: 45px
+				border-radius: 50%
+				margin: 0 auto 35px
+			a
+				color: $main-color
+				text-decoration: underline
+				text-transform: none
+				&:hover
+					text-decoration: none
+
+
+/***************************/
+/****** SPECIAL OFFERS *****/
+/***************************/
+.special-offers
+	background: url(../img/backgrounds/special-offers-bg.png) top center no-repeat
+	padding-bottom: 40px
+	.offers-item
+		width: 450px
+		float: left
+		border: 1px dotted rgba(188, 188, 188, .7)
+		text-align: center
+		&:first-child
+			margin-right: 35px
+		&:last-child
+			p
+				text-align: center
+			.call-us
+				font: 20px "Sylfaen"
+				margin: 0 0 5px
+			.call-number
+				font: 24px "Opium"
+				margin: 0
+				&:last-child
+					margin-bottom: 16px
+			.call-icon
+				background: url(../img/sprite.png) -140px -7px no-repeat
+				width: 54px
+				height: 52px
+				margin: 30px auto 0
+
+		p
+			padding: 0 25px 0 20px
+			text-align: left
+		.offer-name
+			background: url(../img/backgrounds/special-offer-name-bg.jpg) center center no-repeat
+			color: $white-color
+			font-size: 30px
+			padding: 11px 0 10px
+			text-align: center
+			margin-top: 0
+		.admin-mail
+			color: $main-color
+			text-decoration: underline
+			text-transform: none
+		
+		.social-container
+			margin: 30px 20px 15px
+			.soc-wrap
+				display: inline-block
+				margin-bottom: 5px
+				&:nth-child(odd)
+					margin-right: 9px
+				.soc-btn
+					background: url(../img/sprite.png) no-repeat
+					width: 198px
+					height: 37px
+				.v-btn
+					background-position: -12px -74px
+				.f-btn
+					background-position: -12px -133px
+				.o-btn
+					background-position: -14px -192px
+				.t-btn
+					background-position: -14px -251px
+
+		.offers-form
+			margin-top: 25px
+			input
+				color: rgba(153, 153, 153, 1)
+				font: 12px "OpenSansLight"
+				text-align: center
+				border: 1px solid rgba(225, 225, 225, 1)
+				width: 190px
+				box-sizing: border-box
+				padding: 6px 0 4px
+				&:first-child
+					margin-right: 15px
+			.offers-form-button
+				background-color: $main-color
+				color: $white-color
+				width: 400px
+				margin-top: 25px
+				padding: 11px 0 8px
+				font-size: 24px
+				text-transform: uppercase
+				border: none
+				text-shadow: 0 0 134px rgba(251, 251, 251, 0.75)
+
+
+/***************************/
+/******** ADVANTAGES *******/
+/***************************/
+.advantages
+	background: url(../img/backgrounds/special-offers-bg.png) top center no-repeat
+	padding-bottom: 20px
+	h2
+		line-height: 50px
+	.advantages-column
+		float: left
+		margin-right: 40px
+		width: 450px
+		&:last-child
+			margin-right: 0
+		.advantage-wrapper
+			p
+				display: inline-block
+				margin: 0 0 30px
+				width: 385px
+			.advantage-icon
+				background: url(../img/sprite.png) -219px -7px no-repeat
+				display: inline-block
+				margin-right: 25px
+				vertical-align: top
+				width: 34px
+				height: 34px
+
+
+/***************************/
+/********* ONLY WE *********/
+/***************************/
+.only-we
+	background: url(../img/backgrounds/special-offers-bg.png) top center no-repeat
+	padding-bottom: 30px
+	.only-we-column
+		float: left
+		margin-right: 40px
+		width: 450px
+		&:last-child
+			margin-right: 0
+		.only-we-content
+			background: url(../img/backgrounds/only-we-content.jpg) top center no-repeat
+			border: 1px solid rgba(225, 225, 225, 1)
+			margin-bottom: 20px
+			padding: 30px 20px 20px 30px
+			.only-we-text	
+				border-left: 5px solid $main-color
+				padding-left: 30px
+				p
+					margin: 10px 0 0
+
+
+/***************************/
+/********* CLIENTS *********/
+/***************************/
+.testimonials
+	background: url(../img/backgrounds/special-offers-bg.png) top center no-repeat
+	h2
+		line-height: 50px
+		margin-bottom: 30px
+	.testimonials-container
+		text-align: center
+		.client-photo
+			img
+				margin: 0 auto
+		.client-name
+			font: 18px/16px "MinionProBoldItalic"
+	
+.bx-wrapper
+	max-width: 940px
+	margin-bottom: 40px
+	.bx-viewport
+		max-width: 940px
+		border: none
+		box-shadow: none
+	.bx-controls
+		display: none
+
+
+/***************************/
+/******** CONTACTS *********/
+/***************************/
+.contacts
+	background: url(../img/backgrounds/special-offers-bg.png) top center no-repeat
+	margin-bottom: 50px
+	#map
+		width: 940px
+		height: 341px
+		
+
+/***************************/
+/********* FOOTER **********/
+/***************************/
+footer
+	background: url(../img/backgrounds/special-offers-bg.png) top center no-repeat
+	padding-bottom: 20px
+	.address-wrapper
+		padding: 15px 0
+		.address-text
+			float: left
+			p:first-child
+				font-weight: 600
+		.address-container
+			float: right
+			margin-top: 15px
+			text-align: center
+			p
+				font-family: "OpenSansRegular"
+				margin: 0
+			a
+				background-color: $main-color
+				color: $white-color
+				display: block
+				font: 12px/30px "OpenSansRegular"
+				width: 171px
+				margin: 25px 0 20px
+				text-shadow: 0 0 72.2px rgba(251, 251, 251, 0.75)
+				@include radial-gradient(circle at 50% 50%, red 10%, green 30%, #efefef)

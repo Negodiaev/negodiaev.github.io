@@ -1,0 +1,14 @@
+/* Grid */
+.main {
+	min-height: 100%;
+	overflow: hidden;
+	padding-bottom: $footer;
+}
+
+.container {
+	-js-display: flex;
+	display: flex;
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 1200px;
+}

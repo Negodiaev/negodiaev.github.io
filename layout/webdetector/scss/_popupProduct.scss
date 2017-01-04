@@ -1,0 +1,162 @@
+/* Popup product styles */
+.popup-product {
+	top: 4%;
+	width: 1050px;
+	height: auto;
+	margin: 0 0 0 -525px;
+}
+
+.popup-product-inner {
+	padding: 20px;
+}
+
+.popup-product-title {
+	margin-bottom: 15px;
+	padding-right: 30px;
+	line-height: 16 / 24 * 1;
+}
+
+.popup-product-gallery,
+.popup-product-info {
+	float: left;
+}
+
+.popup-product-gallery {
+	width: 57%;
+}
+
+.popup-product-info {
+	padding-left: 20px;
+	width: 43%;
+	font-size: rem(14);
+	line-height: 16 / 14 * 1;
+	.product-id {
+		margin-bottom: 5px;
+		strong {
+			font-weight: $font-bold;
+			color: $text;
+		}
+	}
+	.product-brand {
+		a {
+			color: $p;
+		}
+	}
+	.product-buy {
+		margin-bottom: 20px;
+	}
+	.product-buy-price {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 150px;
+		color: $text;
+	}
+	.buy-price-number {
+		font-size: rem(29);
+		font-weight: $font-bold;
+	}
+	.buy-price-notice {
+		position: absolute;
+		bottom: -18px; left: 0;
+		font-size: rem(12);
+		font-weight: $font-light;
+	}
+	.product-buy-btn {
+		padding: 0 34px;
+		background: $lr;
+		@include transition(background .15s ease-in);
+		&:hover {
+			background: $red;
+		}
+	}
+	.product-favorite-link {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 0 25px 15px;
+		font-size: rem(18);
+		font-weight: $font-light;
+		color: $s;
+		&:hover,
+		&.product-in-favorite {
+			color: $p;
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+		i {
+			&:before {
+				vertical-align: middle;
+				margin-right: 5px;
+				font-size: 25px;
+			}
+		}
+	}
+	.product-tabs {
+		margin-bottom: 15px;
+		a {
+			cursor: default;
+		}
+	}
+	.seller-name {
+		margin-bottom: 15px;
+		font-size: rem(16);
+		font-weight: $font-bold;
+		text-transform: uppercase;
+		color: $text;
+	}
+	.seller-website {
+		margin-bottom: 5px;
+		a {
+			color: $p;
+		}
+	}
+	.seller-location {
+		margin-bottom: 20px;
+		i {
+			&:before {
+				font-size: 27px;
+			}
+		}
+		strong {
+			font-weight: $font-bold;
+			color: $text;
+		}
+	}
+	.seller-service {
+		float: left;
+		margin-bottom: 20px;
+		li {
+			position: relative;
+			padding-left: 25px;
+			font-size: rem(12);
+			line-height: 19 / 12 * 1;
+			color: $text;
+			&:before {
+				content: '\2611';
+				position: absolute;
+				top: -2px; left: 0;
+				font-size: rem(14);
+				color: $dgr;
+			}
+		}
+	}
+	.seller-service-delivery {
+		width: 52%;
+	}
+	.seller-service-payment {
+		width: 48%;
+	}
+	.seller-service-title {
+		margin-bottom: 10px;
+	}
+}
+
+.popup-product-descr {
+	font-size: rem(14);
+	font-weight: $font-light;
+	color: $text;
+	strong {
+		font-weight: $font-bold;
+	}
+}
