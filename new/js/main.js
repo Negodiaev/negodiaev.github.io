@@ -27,7 +27,7 @@
         projectsDir = 'http://negodiaev.github.io/new/projects/';
 
     var request = new XMLHttpRequest();
-      request.open('GET', '../projects.json', true);
+      request.open('GET', 'projects.json', true);
 
       request.onload = function() {
       	if (this.status >= 200 && this.status < 400) {
