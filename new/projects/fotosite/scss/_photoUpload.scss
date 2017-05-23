@@ -1,0 +1,140 @@
+/* Photo upload page */
+.photo-upload-title {
+	margin: 18px 0 48px;
+	text-transform: none;
+}
+
+.upload-btn-wrap {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.upload-btn {
+	margin: 0 13px;
+	padding: 14px 5px;
+	@include size(284px 55px);
+	border: none;
+	outline: none;
+	font-size: rem(25);
+	line-height: 24 / 25 * 1;
+	text-align: center;
+	box-shadow: 0 5px 10px rgba(0, 0, 2, 0.35);
+}
+
+.uploaded-photos-container {
+	@include clearfix();
+	margin: 0 -15px 50px;
+}
+
+.uploaded-photo {
+	position: relative;
+	float: left;
+	padding: 0 15px 24px;
+	width: 16.6666%;
+	img {
+		width: 100%;
+		height: auto;
+	}
+	&.upload-photo-error,
+	&.upload-photo-loading {
+		img:not([src*="preloader"]) {
+			@include filter(blur(5px));
+		}
+		.uploaded-photo-inner {
+			background: rgba(211, 211, 211, .15);
+		}
+	}
+	&.upload-photo-loading {
+		.upload-photo-preloader {
+			img {
+				@include keyframes(rotatePreloader) {
+					0% {
+						@include transform(rotate(0));
+					}
+					50% {
+						@include transform(rotate(180deg));
+					}
+					100% {
+						@include transform(rotate(360deg));
+					}
+				}
+				@include animation(rotatePreloader 1.0s linear infinite);
+			}
+		}
+	}
+}
+
+.uploaded-photo-inner {
+	overflow: hidden;
+}
+
+.uploaded-photo-del {
+	position: absolute;
+	top: 3px; right: 20px;
+	z-index: 5;
+	display: block;
+	@include size(24px);
+	border-radius: 50%;
+	font-size: rem(32);
+	line-height: 24px;
+	text-align: center;
+	background: $w;
+}
+
+.upload-error-message {
+	position: absolute;
+	top: 50%; left: 50%;
+	z-index: 2;
+	padding-bottom: 24px;
+	width: 130px;
+	font-weight: $font-bold;
+	text-align: center;
+	color: $w;
+	@include transform(translate(-50%, -50%));
+}
+
+.upload-warning-message {
+	position: absolute;
+	top: 50%; left: 50%;
+	z-index: 6;
+	margin: -60px 0 0 -43px;
+	@include size(86px);
+	border-radius: 50%;
+	line-height: 86px;
+	text-align: center;
+	background: $w;
+}
+
+.upload-warning-icon {
+	font-size: rem(72);
+	font-weight: $font-bold;
+	color: #de2a2a;
+}
+
+.upload-tooltip-btn {
+	top: 50%; right: 0;
+	margin: -25px -20px 0 0;
+}
+
+.upload-tooltip {
+	top: -65px; left: 60%;
+	min-width: 180px;
+}
+
+.upload-photo-preloader {
+	position: absolute;
+	top: 50%; left: 50%;
+	z-index: 3;
+	@include transform(translate(-50%, -50%));
+}
+
+.print-parameters-btn {
+	display: block;
+	margin: 0 auto 85px;
+	padding: 14px;
+	max-width: 350px;
+	font-size: rem(25);
+	line-height: 28 / 25 * 1;
+	text-align: center;
+	box-shadow: 0 5px 10px rgba(0, 0, 2, 0.35);
+}

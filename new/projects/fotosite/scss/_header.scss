@@ -1,0 +1,164 @@
+/* Header */
+.page-header {
+	padding-top: 20px;
+	color: $w;
+	background: $p;
+}
+
+.page-header-info {
+	float: right;
+}
+
+.page-header-top {
+	margin-bottom: 20px;
+	max-width: 590px;
+	font-size: rem(21);
+	line-height: 28 / 21 * 1;
+}
+
+.header-phones,
+.print-order,
+.authorization {
+	float: left;
+}
+
+.header-phones {
+	margin-right: 26px;
+	padding-top: 35px;
+}
+
+.print-order {
+	margin-right: 30px;
+	padding-top: 42px;
+}
+
+.btn-print-order {
+	padding: 6px 30px 3px;
+	font-size: rem(16);
+	line-height: 34 / 16 * 1;
+}
+
+.authorization {
+	margin-top: 42px;
+	padding-top: 17px;
+	background: url(../images/page-elements/authorization-line.png) 50% 0 no-repeat;
+	a {
+		text-decoration: underline;
+		color: $w;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+//Navigation
+.menu-toggle {
+	position: relative;
+	width: 45px;
+	height: 46px;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.menu-toggle-icon {
+	top: 50%;
+	left: 0px;
+	right: 0px;
+	height: 4px;
+	background-color: $w;
+	position: absolute;
+	@include transform(translate(0, -50%));
+	@include transition(background-color 0.1s linear);
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: $w;
+		height: 100%;
+		@include transform(translate(0, -16px));
+		@include transition(transform 0.2s linear);
+	}
+	&:after {
+		@include transform(translate(0, 16px));
+	}
+}
+
+.menu-wrapper {
+	margin-bottom: 21px;
+}
+
+.menu {
+	float: right;
+	a {
+		float: left;
+		padding: 10px 0 20px;
+		border-bottom: 3px solid transparent;
+		font-size: rem(21);
+		line-height: 28 / 21 * 1;
+		color: $w;
+		&:hover {
+			border-color: $s;
+		}
+		span {
+			text-transform: uppercase;
+		}
+	}
+	& > li {
+		float: left;
+		margin-left: 40px;
+		position: relative;
+		z-index: 2000;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+//Login page header
+.photo-counter {
+	margin-left: -12px;
+	padding-top: 42px;
+	text-align: center;
+	a {
+		display: block;
+		color: $w;
+		span {
+			display: block;
+		}
+	}
+}
+
+.photo-counter-img {
+	margin-bottom: 4px;
+	text-align: center;
+}
+
+.logout {
+	float: right;
+	padding-top: 26px;
+	@include size(125px 45px);
+}
+
+.logout-link {
+	display: block;
+	line-height: 60 / 21 * 1;
+	white-space: nowrap;
+	color: $w;
+	&:hover {
+		span {
+			text-decoration: none;
+		}
+	}
+	img {
+		margin-right: 10px;
+	}
+	span {
+		position: relative;
+		top: 15px;
+		text-decoration: underline;
+	}
+}

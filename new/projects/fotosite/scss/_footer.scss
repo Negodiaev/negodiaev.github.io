@@ -1,0 +1,55 @@
+/* Footer */
+.page-footer {
+	margin-top: -$footer;
+	height: $footer;
+	position: relative;
+	padding-top: 135px;
+	color: $w;
+	background: url(../images/bg/bg-footer.png) bottom center no-repeat;
+	background-color: $bg;
+}
+
+.page-footer-content {
+	position: absolute;
+	bottom: 0; left: 0; right: 0;
+	padding-top: 18px;
+	min-height: 60px;
+	background: $p;
+}
+
+.page-footer-copyright {
+	padding-left: 50px;
+}
+
+.scl-block {
+	ul {
+		float: right;
+	}
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 3px;
+		font-size: 0;
+		@include size(28px);
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	a {
+		font-size: rem(21);
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}
+
+.scl-icon {
+	display: block;
+	background: url(../images/scl-sprite.png) no-repeat;
+}
+
+.scl-icon-fb   { background-position: -10px -10px; }
+.scl-icon-gp   { background-position: -58px -10px; }
+.scl-icon-inst { background-position: -106px -10px; }
+.scl-icon-tw   { background-position: -154px -10px; }
+.scl-icon-vk   { background-position: -202px -10px; }

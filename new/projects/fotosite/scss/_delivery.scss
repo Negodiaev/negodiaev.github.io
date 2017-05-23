@@ -1,0 +1,145 @@
+/* Delivery page */
+.delivery-info-title {
+	margin: 20px 0 65px;
+	line-height:  24 / 35 * 1;
+	text-transform: none;
+}
+
+.delivery-info-form {
+	max-width: 590px;
+}
+
+.delivery-method-label {
+	margin-bottom: 10px;
+	max-width: 280px;
+	font-size: rem(35);
+	line-height: 24 / 35 * 1;
+	&:before,
+	&:after {
+		margin-top: -3px;
+	}
+}
+
+.delivery-method-link {
+	display: inline-block;
+	margin-bottom: 18px;
+	text-decoration: underline;
+	color: $elb;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.delivery-fields-container {
+	@include clearfix();
+	margin-bottom: 33px;
+	.select-wrap {
+		float: left;
+		margin-bottom: 20px;
+	}
+	.select-wrap-50 {
+		width: 280px;
+		margin-left: 30px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	.select-wrap-100 {
+		width: 100%;
+	}
+	.delivery-input {
+		float: left;
+		margin-bottom: 18px;
+	}
+	.delivery-input-50 {
+		width: 280px;
+	}
+	.delivery-input-25 {
+		width: 125px;
+		margin-left: 30px;
+	}
+}
+
+.delivery-method-second {
+	.delivery-method-label {
+		margin-bottom: 53px;
+	}
+	.delivery-fields-container {
+		margin-bottom: 40px;
+	}
+}
+
+.delivery-cost {
+	margin-top: 20px;
+	padding-top: 25px;
+	max-width: 380px;
+	margin-left: auto;
+	background: $dw;
+}
+
+.delivery-cost-item {
+	margin-bottom: 30px;
+	padding: 0 10px 0 40px;
+	line-height: 28 / 21 * 1;
+	b {
+		text-transform: uppercase;
+		font-weight: $font-bold;
+	}
+	span {
+		margin-left: 10px;
+	}
+}
+
+.delivery-cost-total {
+	padding: 40px 10px 40px 45px;
+	font-size: rem(35);
+	line-height: 24 / 35 * 1;
+	font-weight: $font-bold;
+	background: $bg;
+	span {
+		margin-left: 15px;
+	}
+}
+
+.section-payment {
+	padding: 60px 0 102px;
+	background: $dw;
+}
+
+.payment-method {
+	margin: 0 auto;
+	max-width: 525px;
+	text-align: center;
+}
+
+.payment-method-logo {
+	margin-bottom: 22px;
+	height: 64px;
+	line-height: 64px;
+	span,
+	img {
+		vertical-align: middle;
+		
+	}
+	span {
+		font-size: rem(35);
+		line-height: 24 / 35 * 1;
+		font-weight: $font-bold;
+	}
+}
+
+.payment-method-info {
+	margin-bottom: 38px;
+	font-size: rem(16);
+	line-height: 24 / 16 * 1;
+	text-align: left;
+}
+
+.payment-method-btn {
+	padding: 16px 102px 12px;
+	border: none;
+	outline: none;
+	font-size: rem(25);
+	line-height: 24 / 25 * 1;
+	box-shadow: 0 5px 10px rgba(0, 0, 2, 0.35);
+}

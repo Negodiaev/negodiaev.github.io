@@ -1,0 +1,84 @@
+/* Footer */
+.page-footer {
+	margin-top: -$footer;
+	height: $footer;
+	padding: 80px 0 50px;
+	text-align: center;
+	background: #e1e1e1;
+}
+
+.scl-menu {
+	margin-bottom: 17px;
+	border-bottom: 1px solid $w;
+	ul {
+		margin-bottom: 80px;
+		font-size: 0;
+		text-align: center;
+	}
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 35px;
+	}
+	a {
+		display: block;
+		@include size(90px);
+		border-radius: 50%;
+		font-size: rem(40);
+		background: $w;
+		i {
+			line-height: 90px;
+			color: $dgr;
+		}
+	}
+}
+
+.page-footer-nav {
+	margin-bottom: 35px;
+	ul {
+		font-size: 0;
+		text-align: center;
+	}
+	li {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 11px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%; left: 0;
+			display: block;
+			margin-top: -10px;
+			@include size(2px 17px);
+			background: $lt;
+		}
+		&:first-child {
+			&:before {
+				display: none;
+			}
+		}
+	}
+	a {
+		font-size: rem(18);
+	}
+	.page-header-add {
+		color: $text;
+	}
+}
+
+.copyright {
+	color: $lt;
+}
+
+.copyright-website-name {
+	text-transform: uppercase;
+	span {
+		font-weight: $font-black;
+		color: $p;
+	}
+}
+
+.copyright-rules-link {
+	margin-left: 10px;
+}

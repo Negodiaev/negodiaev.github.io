@@ -1,0 +1,261 @@
+/* Print parameters page */
+.filter {
+	margin-top: 18px;
+	padding: 15px 0 8px;
+	line-height: 24 / 21 * 1;
+	color: $w;
+	background: $p;
+}
+
+.filter-select-links {
+	padding-top: 9px;
+}
+
+.filter-select-link {
+	margin: 0 11px;
+	line-height: 24 / 21 * 1;
+	font-weight: $font-bold;
+	text-decoration: underline;
+	color: $w;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.filter-sort {
+	margin: 0 -30px 0 auto;
+	padding-top: 9px;
+	max-width: 315px;
+}
+
+.filter-sort-name {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.filter-select-wrap {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+	min-width: 140px;
+}
+
+.filter-sort-select {
+	padding: 2px 40px 2px 10px;
+	text-transform: lowercase;
+}
+
+.filter-buttons {
+	text-align: right;
+	font-size: 0;
+}
+
+.filter-btn {
+	@include size(190px 43px);
+	margin-left: 15px;
+	padding: 14px;
+	font-size: rem(16);
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.filter-info {
+	margin-bottom: 50px;
+	padding: 15px 0 7px;
+	line-height: 24 / 21 * 1;
+	background: $dw;
+}
+
+.filter-info-text {
+	text-transform: lowercase;
+}
+
+.filter-arrow {
+	display: block;
+	@include size(15px);
+	border-top: 3px solid $p;
+}
+
+.filter-arrow-left {
+	float: left;
+	border-left: 3px solid $p;
+	@include transform(rotate(-45deg));
+}
+
+.filter-arrow-right {
+	float: right;
+	border-right: 3px solid $p;
+	@include transform(rotate(45deg));
+}
+
+.photo-container-wrap {
+	padding-bottom: 80px;
+}
+
+.photo-container {
+	margin-top: 48px;
+	border-bottom: 2px solid $bg;
+	line-height: 24 / 21 * 1;
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.photo-container-top {
+	position: relative;
+	margin-bottom: 30px;
+	padding: 0 50px 0 207px;
+	background: $dw;
+}
+
+.photo-container-checkbox {
+	position: absolute;
+	top: 10px; left: 12px;
+	input {
+		+ label {
+			&:before,
+			&:after {
+				right: initial;
+			}
+			&:after {
+				left: 2px;
+			}
+		}
+		&:checked + label {
+			&:after {
+				right: initial;
+				left: 23px;
+			}
+		}
+	}
+}
+
+.photo-container-badge {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 9px 15px 7px 0;
+	padding: 4px 25px;
+	border-radius: 20px;
+	background: $w;
+}
+
+.photo-container-del {
+	display: block;
+	position: absolute;
+	top: 7px; right: 10px;
+	@include size(21px 36px);
+	border: none;
+	outline: none;
+	background: url(../images/icons/icon-basket.png) 50% 50% no-repeat;
+}
+
+.photo-container-content {
+	margin-bottom: 10px;
+}
+
+.photo-container-img {
+	position: relative;
+	float: left;
+	max-width: 288px;
+	max-height: 288px;
+	&:hover {
+		.img-modal-btn {
+			// opacity: 1;
+		}
+	}
+	.img-modal-btn {
+		position: absolute;
+		bottom: 12px; left: 50%;
+		padding: 7px 20px;
+		border-radius: 20px;
+		font-size: rem(16);
+		// opacity: 0;
+		background: rgba(#fff, .8);
+		@include transform(translateX(-50%));
+		@include transition(all .15s ease-in)
+	}
+}
+
+.photo-container-parameters {
+	float: right;
+	max-width: 795px;
+	
+	.photo-col {
+		float: left;
+		margin-left: 30px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	.photo-col-1 { width: 175px; }
+	.photo-col-2 { width: 297px; }
+	.photo-col-3 { width: 263px; }
+	
+	.photo-parameter {
+		position: relative;
+		margin-bottom: 20px;
+	}
+	.photo-parameter-text {
+		margin-bottom: 2px;
+	}
+	.photo-parameter-textarea {
+		padding: 5px 10px;
+		width: 100%;
+		height: 160px;
+		border: 1px solid #ccc;
+		overflow: auto;
+		font-size: rem(16);
+		font-style: italic;
+		color: #666;
+	}
+	.photo-textarea-wrap {
+		margin-bottom: 15px;
+	}
+	.font-size-select {
+		float: left;
+		width: 86px;
+	}
+	.font-style-buttons {
+		float: right;
+	}
+	.font-style-btn {
+		margin-left: 2px;
+		@include size(33px 32px);
+		border: 1px solid $bg;
+		outline: none;
+		font-weight: $font-bold;
+		background: $w;
+		&.active {
+			background: $bg;
+		}
+	}
+	.font-italic-btn {
+		font-style: italic;
+	}
+	.font-underline-btn {
+		text-decoration: underline;
+	}
+	.photo-date-wrap {
+		margin: -5px 0 25px;
+	}
+	.photo-dateformat-wrap {
+		margin-bottom: 40px;
+	}
+	.dateformat-select {
+		text-transform: lowercase;
+	}
+}
+
+.photo-container-btn {
+	display: block;
+	padding: 8px 15px;
+	margin: 95px 0 0 auto;
+	max-width: 206px;
+	max-height: 56px;
+	font-size: rem(16);
+	line-height: 20 / 16 * 1;
+	text-align: center;
+	white-space: normal;
+	box-shadow: 0 5px 10px rgba(0, 0, 2, 0.35);
+}

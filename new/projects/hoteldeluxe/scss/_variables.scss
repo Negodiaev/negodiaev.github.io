@@ -1,0 +1,36 @@
+$footer: 359px;
+
+$em-base: 12px; //Default font-size value
+$fontSize: 1rem;
+$lineHeight: 1.4;
+$fontFamily: 'Quicksand', sans-serif;                   $ff: $fontFamily;
+$secondaryFont: 'Droid Sans', sans-serif;               $sfont: $secondaryFont;
+$decorativeFont: 'Ardecode', sans-serif;                $dfont: $decorativeFont;
+
+$durationFunction: 0.15s ease-in-out;      $df: $durationFunction;
+
+$primary: #ffd700;                $p: $primary;
+$secondary: #e7cb2c;              $s: $secondary;
+$background: #f1f1f1;             $bg: $background;
+$text: #2a2e33;                   $t: $text;
+$link: #00c;                      $l: $link;
+$link-hover: #1e2329;             $lh: $link-hover;
+
+$white: #fff;                     $w: $white;
+$black: #000;                     $b: $black;
+$dark-gray: #333;                 $dgr: $dark-gray;
+$gray: #5a5a5a;                   $gr: $gray;
+$light-gray: #c7c7c7;             $lgr: $light-gray;
+$green: #0c3;                     $gn: $green;
+$red: #f00;                       $r: $red;
+$transparent: transparent;        $tr: $transparent;
+
+$font-thin: 100;
+$font-extra-light: 200;
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-heavy: 800;
+$font-black: 900;

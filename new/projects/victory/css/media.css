@@ -1,0 +1,743 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Very large Devices, Very wide Screens */
+@media only screen and (max-width : 1366px) {
+	#map {
+		width: 1366px;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+	
+	/*** HEADER ***/
+	.main-menu ul li {
+    margin-right: 12px;
+	}
+	
+	.info-line .col-md-4 {
+		padding: 0;
+		width: 35%;
+	}
+
+	.info-line .col-md-4:last-child {
+		padding: 0;
+		width: 30%;
+	}
+
+	.info-line .address:before {
+		float: left;
+	}
+
+	.info-line .ddress:after {
+		float: right;
+	}
+
+	.info-line .phone {
+		text-align: center;
+	}
+
+	.info-line .logo {
+		margin-left: 10px;
+	}
+
+	header .col-md-7 {
+		padding: 0 15px
+	}
+
+	.header-info p {
+		font-size: 36px;
+	}
+
+	.header-info h1 {
+    font-size: 48px;
+    padding: 4px 22px 8px;
+    width: 95%;
+	}
+
+	.header-info span {
+    font-size: 36px;
+    padding: 17px 21px 11px;
+    width: 95%;
+	}
+	
+	h2 {
+		font-size: 44px;
+	}
+
+	/*** SERVICES ***/
+	.services-item-wrapper {
+		height: 256px; 
+	}
+
+	.services-item-wrapper h3 {
+		font-size: 26px;
+		width: 425px;
+		height: 120px;
+	}
+
+	.services-item-inner .services-item-content ul {
+		font-size: 20px;
+		padding: 0 30px 0 60px;
+	}
+
+	.services-item-inner .services-item-content ul li {
+		margin: 15px 0;
+	}
+
+	/*** HOW WORK ***/
+	.how-work .big-circle {
+		margin: 0 20px
+	}
+
+	.how-work p {
+		font-size: 20px;
+		margin-top: 25px;
+	}
+
+	/*** SOME QUESTIONS ***/
+	.some-questions p {
+		font-size: 44px;
+	}
+
+	#second-form {
+		margin-top: 35px;
+	}
+
+	#second-form button {
+		margin-top: 5px;
+	}
+
+	/*** ABOUT US ***/
+	.owl-carousel {
+		padding: 0 30px;
+	}
+
+	.client-comments p {
+		font-size: 26px;
+	}
+
+	.comment-block {
+    margin-bottom: 30px;
+	}
+
+	/*** CONTACTS ***/
+	#map {
+		width: 1199px;
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+	
+	/*** HEADER ***/
+	header {
+		text-align: center;
+	}
+
+	.main-menu ul {
+		padding: 10px 0;
+	}
+
+	.main-menu ul li {
+		margin-right: 7px;
+	}
+
+	.main-menu a {
+		font-size: 15px;
+	}
+
+	.info-line .col-sm-4 {
+		padding: 0;
+		width: 35%;
+	}
+
+	.info-line .col-sm-4:last-child {
+		padding: 0;
+		width: 30%;
+	}
+
+	.info-line .logo {
+		margin-left: 0;
+	}
+
+	.info-line .logo span {
+		font-size: 38px;
+	}
+
+	.info-line .logo p {
+    font-size: 12px;
+	}
+
+	.info-line .address .address-text {
+    padding: 0 10px;
+	}
+
+	.info-line .phone {
+    margin-top: 5px;
+	}
+
+	.info-line .phone p {
+    font-size: 28px;
+	}
+
+	.info-line .phone p span {
+    font-size: 24px;
+	}
+
+	.info-line .phone a {
+		padding: 8px 20px;
+	}
+
+	.header-info {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	.header-info h1, 
+	.header-info span {
+		width: 80%;
+		margin: 10px auto;	
+	}
+
+	.header-extra-button {
+		display: inline-block;
+	}
+
+	.double-button {
+		font-size: 24px;
+		padding: 18px 33px 18px 23px;
+	}
+
+	/*** SERVICES ***/
+	h2 {
+    font-size: 36px;
+	}
+
+	.services-item-wrapper {
+		cursor: pointer;
+		height: 220px;
+	}
+
+	.services-item-wrapper h3 {
+		font-size: 22px;
+		width: 320px;
+		height: 110px;
+	}
+
+	.services-item-inner .services-item-content ul {
+		font-size: 18px;
+		padding: 0 10px 0 50px;
+	}
+
+	.services-item-inner .services-item-content ul li {
+		margin: 10px 0;
+	}
+	
+	.services-item-inner .services-item-content a {
+		font-size: 20px;
+	}
+
+	.services-item-inner .services-item-content span {
+		font-size: 26px;
+	}
+
+	.services-item-wrapper .services-item-inner {
+		top: -500px;
+	}
+
+	.services-item-wrapper:hover img { 
+		transform: scale(1);
+  	opacity: 1;
+	}
+
+	/*** HOW WORK ***/
+	.how-work .big-circle {
+		margin: 0 30px 10px;
+	}
+
+	.how-work p {
+		font-size: 24px;
+		margin-top: 30px;
+	}
+
+	/*** SOME QUESTIONS ***/
+	.some-questions p {
+		font-size: 36px;
+	}
+
+	#second-form {
+		margin-top: 25px;
+	}
+
+	#second-form .notice {
+		text-align: left;
+	}
+
+	#second-form button {
+		margin-top: -20px;
+		margin-right: 15px;
+	}
+
+	/*** ABOUT US ***/
+	.owl-carousel {
+		padding: 0 80px;
+	}
+
+	.client-comments p {
+		font-size: 22px;
+	}
+
+	.comment-block {
+    margin: 20px 0 40px;
+	}
+
+	/*** CONTACTS ***/
+	.contacts-content .title-line {
+		width: 235px;
+	}
+
+	.address-block {
+		width: 100%;
+		margin: 40px auto 0;
+	}
+
+	.main-form-block,
+	#hidden-form-block {
+		width: 340px;
+		padding: 20px;
+	}
+
+	.contacts-content .main-form-block,
+	.contacts-content #hidden-form-block {
+		margin-top: 0;
+	}
+
+	.main-form-block p,
+	#hidden-form-block p {
+		font-size: 28px;
+	}
+	
+	.main-form-block p span,
+	#hidden-form-block p span {
+		font-size: 36px;
+	}
+
+	#main-form .input-wrapper,
+	#hidden-form .input-wrapper {
+		width: 300px;
+	}
+
+	#main-form input,
+	#hidden-form input {
+		width: 240px;
+	}
+
+	#main-form button,
+	#hidden-form button {
+		font-size: 26px;
+		padding: 10px 20px
+	}
+
+	#main-form .notice,
+	#hidden-form .notice {
+		font-size: 12px;
+		margin-top: 10px;
+	}
+
+	.contacts, 
+	#map {
+		height: 545px;
+	}
+	
+	#map {
+		width: 991px;
+	}
+
+	.up-button {
+		display: none;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	
+	/*** HEADER ***/
+	header {
+		min-height: 500px;
+	}
+
+	.small-menu-wrapper {
+		text-align: center;
+		background: rgba(135, 12, 10, 1);
+	}
+
+	.small-menu-wrapper .menu-mini {
+		color: rgba(135, 12, 10, 1);
+		padding: 5px 10px;
+		border-radius: 5px;
+		background: rgba(229, 227, 226, 1);
+		text-decoration: none;
+		-webkit-box-shadow: 2px 2px 7px 0 #555;
+		box-shadow: 2px 2px 7px 0 #555;
+	}
+
+	.small-menu {
+		height: 0;
+		overflow: hidden;
+		transition: ease 0.3s;
+	}
+
+	.small-menu ul {
+		padding: 10px;
+		margin-top: 20px;
+	}
+
+	.small-menu ul li {
+		padding: 15px;
+		border: 1px solid;
+		border-bottom: none;
+	}
+
+	.small-menu ul li:last-child {
+		border-bottom: 1px solid;
+	}
+
+	.show-menu {
+		height: 375px;
+	}
+	
+	.info-line .col-xs-12,
+	.info-line .col-xs-12:last-child {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.info-line .address::before,
+	.info-line .address::after {
+		display: none;
+	}
+
+	.header-info {
+		margin: 80px 0;
+	}
+
+	.header-info p {
+		font-size: 32px;
+	}
+
+	.header-info h1, .header-info span {
+		width: 95%;
+	}
+
+	.header-info h1 {
+		font-size: 40px;
+		padding: 4px 15px 8px;
+	}
+
+	.header-info span {
+		font-size: 32px;
+		padding: 14px 15px 8px;
+	}
+
+	/*** SERVICES ***/
+	h2 {
+		font-size: 32px;
+	}
+
+	.services-wrapper .s-vertical-line,
+	.services-wrapper .s-wrapper-block {
+		display: none;
+	}
+
+	.services-wrapper {
+		margin-top: 30px;
+	}
+
+	.services-item-wrapper {
+		height: 260px;
+	}
+
+	.b-services .services-item-wrapper:last-child h3 {
+    width: auto;
+	}
+
+	.services-item-wrapper h3 {
+		min-width: 430px;
+	}
+
+	.services-item-inner {
+		padding: 18px 30px;
+	}
+
+	/*** HOW WORK ***/
+	.how-work .big-circle {
+		margin: 0 10px;
+	}
+
+	.how-work p {
+		font-size: 22px;
+	}
+
+	/*** SOME QUESTIONS ***/
+	.some-questions {
+		padding: 30px 20px 40px;
+	}
+
+	.some-questions .title-line {
+    margin: 5px 0 15px;
+	}
+
+	.some-questions p {
+		font-size: 32px;
+	}
+
+	#second-form {
+		margin: 10px 0 15px;
+	}
+
+	#second-form .input-wrapper {
+		height: 40px;
+	}
+
+	#second-form .input-icon {
+		width: 50px;
+	}
+
+	#second-form .name-icon {
+		background-position: -114px -7px;
+	}
+
+	#second-form .phone-icon {
+		background-position: -114px -61px;
+	}
+
+	#second-form input {
+		padding: 8px 15px;
+	}
+
+	#second-form button {
+		margin: 0 0 10px;
+		padding: 10px 56px;
+		float: none;
+	}
+
+	/*** ABOUT US ***/
+	.owl-carousel {
+		padding: 0 90px;
+	}
+
+	.owl-carousel:last-child {
+		padding: 0 10px;
+	}
+
+	.client-comments p {
+		font-size: 20px;
+	}
+
+	.comment-block {
+    margin: 20px 0;
+	}
+
+	/*** CONTACTS ***/
+	.address-block {
+		width: 70%;
+		margin: 40px auto;
+	}
+
+	.contacts-content .main-form-block,
+	.contacts-content #hidden-form-block {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.contacts, 
+	#map {
+		height: 1020px;
+	}
+
+	#map {
+		width: 767px;
+	}
+
+	.logo-link {
+		text-align: center;
+	}
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	/*** HEADER ***/
+	.header-info {
+		margin: 60px 0;
+	}
+
+	.header-info p {
+		font-size: 28px;
+	}
+
+	.header-info h1, .header-info span {
+		width: 85%;
+	}
+
+	.header-info h1 {
+		font-size: 36px;
+	}
+
+	.header-info span {
+		font-size: 28px;
+	}
+
+	.double-button {
+    font-size: 20px;
+    padding: 13px;
+	}
+
+	/*** SERVICES ***/
+	h2 {
+		font-size: 28px;
+	}
+
+	.title-line {
+		width: 200px;
+	}
+
+	.services-item-wrapper {
+		height: 200px;
+	}
+
+	.services-item-wrapper h3 {
+		min-width: 270px;
+		font-size: 20px;
+	}
+
+	.services-item-inner {
+		padding: 8px 20px;
+	}
+
+	.services-item-inner .services-item-content ul {
+		font-size: 16px;
+	}
+
+	.services-item-inner .services-item-content ul li {
+		margin: 5px 0;
+	}
+
+	.services-item-inner .services-item-content a {
+		font-size: 18px;
+	}
+
+	.services-item-inner .services-item-content span {
+		font-size: 22px;
+		margin-left: 10px;
+	}
+
+	.services .double-button {
+    margin: 30px 0 10px;
+	}
+
+	/*** HOW WORK ***/
+	.how-work {
+		padding-bottom: 20px;
+	}
+
+	.how-work p {
+    font-size: 19px;
+	}
+
+	/*** SOME QUESTIONS ***/
+	.some-questions {
+		padding: 30px 20px 20px;
+	}
+
+	.some-questions p {
+    font-size: 28px;
+	}
+
+	#second-form .input-wrapper {
+		width: 280px;
+	}
+
+	#second-form input {
+		width: 220px;
+	}
+
+	#second-form button {
+		padding: 10px 44px;
+		font-size: 22px;
+		margin-top: 10px;
+	}
+
+	/*** ABOUT US ***/
+	.owl-carousel {
+		padding: 0 15px;
+	}
+
+	.client-comments .comment-text {
+		padding: 10px;
+	}
+
+	/*** CONTACTS ***/
+	.main-form-block,
+	#hidden-form-block {
+    padding: 15px;
+    width: 300px;
+	}
+
+	#main-form .input-wrapper,
+	#hidden-form .input-wrapper {
+    width: 270px;
+	}
+
+	#main-form input, #hidden-form input {
+    width: 200px;
+	}
+
+	.contacts, 
+	#map {
+		height: 1050px;
+	}
+
+	#map {
+		width: 480px;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

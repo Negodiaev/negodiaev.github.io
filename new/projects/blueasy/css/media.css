@@ -1,0 +1,214 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.top_wrapper .top_line {
+		opacity: 1;
+	}
+	
+	.left_col {
+		margin-bottom: 40px
+	}
+	
+	.services_item {
+		text-align: center;
+	}
+
+	footer .left_col ul > li {
+		padding: 0 10px;
+	}
+
+	footer {
+		padding: 40px 0 20px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	
+	.top_menu {
+		position: relative;
+		opacity: 1;
+	}
+
+	.top_menu ul {
+		display: none;
+		position: absolute;
+		left: -81px;
+		top: 78px;
+		/*width: 100%;*/
+		text-align: right;
+		background-color: rgba(81,95,103, 1);
+		margin: 0;
+		padding: 5px 0 10px;
+	}
+
+	.top_menu ul li {
+		display: inline-block;
+		margin: 5px 10px;
+	}
+	
+	.active_link {
+		color: #fff;
+		border: none;
+	}
+
+	.logo {
+		margin: 20px 0;
+	}
+
+	h1 {
+			font-size: 32px;
+	}
+	
+	h2 {
+			font-size: 27px;
+	}
+	
+	.top_centered .to_down {
+		display: none;
+	}
+	
+	.services_item {
+		width: 55%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.s_portfolio .section_header {
+		margin-bottom: 30px;
+	}
+	
+	.s_default .left_col {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.s_default .left_col h3 {
+		text-align: left;
+	}
+
+	.right_col {
+		margin-top: 30px;
+	}
+	
+	.s_about {
+		min-height: 560px;
+	}
+
+	footer {
+		text-align: center;
+	}
+	
+	footer .left_col {
+	margin-bottom: 20px;
+	}
+	
+	footer .right_col {
+		float: none;
+		margin-top: 0;
+	}
+
+	.main_form {
+		margin-bottom: 35px;
+	}
+
+	.contact_info .contact_descr {
+		width: 70%;
+	}
+
+	.contacts_content {
+    padding: 65px 0 15px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+	.top_text h1 {
+			font-size: 21px;
+	}
+	
+	.top_text h2 {
+			font-size: 18px;
+	}
+	
+	.services_item {
+		width: 100%;
+	}
+	
+	.portfolio_item:hover .port_item_cont {
+		padding-top: 9%;
+	}
+	
+	.right_col {
+		display: none;
+	}
+	
+	.s_about {
+		min-height: 660px;
+	}
+
+	footer .left_col ul > li {
+		display: block;
+		border: none;
+	}
+
+	.main_form .button_wrap .form_btn {
+		padding: 15px 80px
+	}
+
+	.contact_info .contact_descr {
+		width: 100%;
+	}
+	
+	.about_content .social {
+		text-align: center;
+	}
+
+	.main_form .button_wrap {
+		text-align: center;
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
