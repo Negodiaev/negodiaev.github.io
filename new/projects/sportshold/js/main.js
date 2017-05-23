@@ -141,7 +141,6 @@
         }
       }
       else {
-        console.log('It\'s desktop');
         if (!isDesktop) {
           testimonialsLinksList.style.transform = 'translateX(0)';
           testimonialsLinks[1].firstElementChild.click();
