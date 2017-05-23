@@ -47,7 +47,7 @@ section,
 button,
 canvas,
 video {
-	vertical-align: baseline; 
+	vertical-align: baseline;
 	margin: 0;
 	padding: 0;
 }
@@ -87,7 +87,7 @@ th {
 }
 
 table {
-	border-spacing: 0; 
+	border-spacing: 0;
 	border-collapse: collapse;
 }
 
@@ -99,7 +99,7 @@ th {
 sub,
 sup {
 	position: relative;
-	vertical-align: baseline; 
+	vertical-align: baseline;
 	font-size: 75%;
 	line-height: 0;
 }
@@ -130,7 +130,7 @@ input[type='email'],
 input[type='tel'],
 input[type='number'],
 textarea {
-	border-radius: 0; 
+	border-radius: 0;
 
 	-webkit-appearance: none;
 	   -moz-appearance: none;
@@ -157,7 +157,7 @@ input[type='search']::-webkit-search-decoration {
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-	padding: 0; 
+	padding: 0;
 	border: 0;
 }
 
@@ -247,7 +247,7 @@ img {
 	clear: both;
 	display: block;
 	height: 0;
-	font-size: 0; 
+	font-size: 0;
 	line-height: 0;
 }
 
@@ -270,7 +270,7 @@ img {
 }
 
 .overflow-hidden {
-	display: block; 
+	display: block;
 	overflow: hidden;
 }
 
@@ -310,25 +310,25 @@ body {
 @font-face {
 	font-family: 'Trueno';
 	font-weight: 300;
-	font-style: normal; 
-	src: url('/../fonts/Trueno/TruenoLight/TruenoLt.eot');
-	src: url('/../fonts/Trueno/TruenoLight/TruenoLt.eot?#iefix') format('embedded-opentype'), url('/../fonts/Trueno/TruenoLight/TruenoLt.woff') format('woff'), url('/../fonts/Trueno/TruenoLight/TruenoLt.ttf') format('truetype'), url('/../fonts/Trueno/TruenoLight/TruenoLt.svg#TruenoLt') format('svg');
+	font-style: normal;
+	src: url('./../fonts/Trueno/TruenoLight/TruenoLt.eot');
+	src: url('./../fonts/Trueno/TruenoLight/TruenoLt.eot?#iefix') format('embedded-opentype'), url('./../fonts/Trueno/TruenoLight/TruenoLt.woff') format('woff'), url('./../fonts/Trueno/TruenoLight/TruenoLt.ttf') format('truetype'), url('./../fonts/Trueno/TruenoLight/TruenoLt.svg#TruenoLt') format('svg');
 }
 
 @font-face {
 	font-family: 'Trueno';
 	font-weight: 700;
-	font-style: normal; 
-	src: url('/../fonts/Trueno/TruenoBold/TruenoBd.eot');
-	src: url('/../fonts/Trueno/TruenoBold/TruenoBd.eot?#iefix') format('embedded-opentype'), url('/../fonts/Trueno/TruenoBold/TruenoBd.woff') format('woff'), url('/../fonts/Trueno/TruenoBold/TruenoBd.ttf') format('truetype'), url('/../fonts/Trueno/TruenoBold/TruenoBd.svg#TruenoBd') format('svg');
+	font-style: normal;
+	src: url('./../fonts/Trueno/TruenoBold/TruenoBd.eot');
+	src: url('./../fonts/Trueno/TruenoBold/TruenoBd.eot?#iefix') format('embedded-opentype'), url('./../fonts/Trueno/TruenoBold/TruenoBd.woff') format('woff'), url('./../fonts/Trueno/TruenoBold/TruenoBd.ttf') format('truetype'), url('./../fonts/Trueno/TruenoBold/TruenoBd.svg#TruenoBd') format('svg');
 }
 
 @font-face {
 	font-family: 'Trueno';
 	font-weight: 900;
-	font-style: normal; 
-	src: url('/../fonts/Trueno/TruenoBlack/TruenoBlk.eot');
-	src: url('/../fonts/Trueno/TruenoBlack/TruenoBlk.eot?#iefix') format('embedded-opentype'), url('/../fonts/Trueno/TruenoBlack/TruenoBlk.woff') format('woff'), url('/../fonts/Trueno/TruenoBlack/TruenoBlk.ttf') format('truetype'), url('/../fonts/Trueno/TruenoBlack/TruenoBlk.svg#TruenoBlk') format('svg');
+	font-style: normal;
+	src: url('./../fonts/Trueno/TruenoBlack/TruenoBlk.eot');
+	src: url('./../fonts/Trueno/TruenoBlack/TruenoBlk.eot?#iefix') format('embedded-opentype'), url('./../fonts/Trueno/TruenoBlack/TruenoBlk.woff') format('woff'), url('./../fonts/Trueno/TruenoBlack/TruenoBlk.ttf') format('truetype'), url('./../fonts/Trueno/TruenoBlack/TruenoBlk.svg#TruenoBlk') format('svg');
 }
 
 /* Typography */
@@ -415,7 +415,7 @@ a:hover {
 
 .content table th {
 	padding: .8125rem 1.625rem;
-	border: 1px solid #bdb9b5; 
+	border: 1px solid #bdb9b5;
 	background: #bdb9b5;
 }
 
@@ -585,7 +585,7 @@ a:hover {
 	visibility: hidden;
 	overflow: hidden;
 	width: 0;
-	height: 0; 
+	height: 0;
 	font-size: 0;
 	line-height: 0;
 }
@@ -665,7 +665,7 @@ a:hover {
 .grid-container {
 	margin-right: auto;
 	margin-left: auto;
-	padding-right: 15px; 
+	padding-right: 15px;
 	padding-left: 15px;
 	max-width: 1170px;
 }
@@ -737,17 +737,17 @@ a:hover {
 .mobile-grid-66,
 .tablet-grid-66 {
 	box-sizing: border-box;
-	padding-right: 15px; 
+	padding-right: 15px;
 	padding-left: 15px;
 }
 
 .grid-parent {
-	padding-right: 0; 
+	padding-right: 0;
 	padding-left: 0;
 }
 
 .grid-offset {
-	margin-right: -15px; 
+	margin-right: -15px;
 	margin-left: -15px;
 }
 
@@ -1924,7 +1924,7 @@ a:hover {
 /* Grid */
 .main {
 	overflow: hidden;
-	padding-bottom: 45.625em; 
+	padding-bottom: 45.625em;
 	min-height: 100%;
 }
 
@@ -1939,7 +1939,7 @@ a:hover {
 }
 .page-header-top .menu:after {
 	content: ' ';
-	clear: both; 
+	clear: both;
 	display: table;
 }
 .page-header-top .menu > li {
@@ -1978,7 +1978,7 @@ a:hover {
 	margin-right: .692em;
 }
 .menu-right > li .cart-link .icon svg {
-	vertical-align: middle; 
+	vertical-align: middle;
 	margin-top: -5px;
 }
 .menu-right > li .cart-link .total-items {
@@ -1993,7 +1993,7 @@ a:hover {
 	position: relative;
 	z-index: 110;
 	padding: 1.25em 0;
-	max-width: 100%; 
+	max-width: 100%;
 	width: 182px;
 }
 
@@ -2008,17 +2008,17 @@ a:hover {
 
 .navigation {
 	position: relative;
-	float: right; 
+	float: right;
 	z-index: 100;
 }
 
 .nav-menu {
-	margin-right: -.625em; 
+	margin-right: -.625em;
 	padding-bottom: .25em;
 }
 .nav-menu:after {
 	content: ' ';
-	clear: both; 
+	clear: both;
 	display: table;
 }
 .nav-menu > li {
@@ -2295,7 +2295,7 @@ a:hover {
 	margin-bottom: .833em;
 }
 .promo .item.item-quarter {
-	background-position: 50% 50%; 
+	background-position: 50% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -2345,7 +2345,7 @@ a:hover {
 .product .content .image {
 	height: 12.5em;
 	background-position: 50% 50%;
-	background-size: contain; 
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 .product .content .image a {
@@ -2412,7 +2412,7 @@ a:hover {
 .testimonials {
 	padding: 6.25em 0;
 	background-color: #472424;
-	background-position: 50% 0; 
+	background-position: 50% 0;
 	background-repeat: no-repeat;
 }
 
@@ -2441,7 +2441,7 @@ a:hover {
 	height: 100%;
 	opacity: .5;
 	background-position: 50% 50%;
-	background-size: cover; 
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 .news .article .content {
@@ -2502,7 +2502,7 @@ a:hover {
 }
 .callback .content {
 	display: table;
-	margin-bottom: 1.875em; 
+	margin-bottom: 1.875em;
 	width: 100%;
 }
 .callback .content .container {
@@ -2538,7 +2538,7 @@ a:hover {
 .select {
 	border: 0;
 	border-radius: 0;
-	cursor: pointer; 
+	cursor: pointer;
 
 	-webkit-appearance: none;
 	   -moz-appearance: none;
@@ -2604,7 +2604,7 @@ a:hover {
 	height: 26px;
 	border: none;
 	cursor: pointer;
-	background-color: transparent; 
+	background-color: transparent;
 
 	-webkit-appearance: none;
 	   -moz-appearance: none;
@@ -2617,7 +2617,7 @@ a:hover {
 	width: 100%;
 	height: 3px;
 	background-color: #fff;
-	transition: background-color .3s .3s; 
+	transition: background-color .3s .3s;
 	-webkit-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
 }
@@ -2650,7 +2650,7 @@ a:hover {
 	top: 0;
 	transition: top .3s, -webkit-transform .3s .3s;
 	transition: top .3s, transform .3s .3s;
-	transition: top .3s, transform .3s .3s, -webkit-transform .3s .3s; 
+	transition: top .3s, transform .3s .3s, -webkit-transform .3s .3s;
 	-webkit-transform: rotate(45deg);
 	        transform: rotate(45deg);
 }
@@ -2658,7 +2658,7 @@ a:hover {
 	bottom: 0;
 	transition: bottom .3s, -webkit-transform .3s .3s;
 	transition: bottom .3s, transform .3s .3s;
-	transition: bottom .3s, transform .3s .3s, -webkit-transform .3s .3s; 
+	transition: bottom .3s, transform .3s .3s, -webkit-transform .3s .3s;
 	-webkit-transform: rotate(-45deg);
 	        transform: rotate(-45deg);
 }
@@ -2675,7 +2675,7 @@ a:hover {
 }
 .tabs .links ul:after {
 	content: ' ';
-	clear: both; 
+	clear: both;
 	display: table;
 }
 .tabs .links ul > li {
@@ -2782,7 +2782,7 @@ a:hover {
 	border-radius: 50%;
 	background-color: #f0efee;
 	background-position: 50% 50%;
-	background-size: cover; 
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
@@ -2801,7 +2801,7 @@ a:hover {
 	clip: rect(0, 0, 0, 0);
 }
 .rating input:checked ~ label {
-	background: transparent url(/../images/icons/icon-star-checked.svg) no-repeat 50% 50%;
+	background: transparent url(./../images/icons/icon-star-checked.svg) no-repeat 50% 50%;
 	background-size: cover;
 }
 .rating label {
@@ -2813,7 +2813,7 @@ a:hover {
 	text-indent: 10em;
 	white-space: nowrap;
 	cursor: pointer;
-	background: transparent url(/../images/icons/icon-star.svg) no-repeat 50% 50%;
+	background: transparent url(./../images/icons/icon-star.svg) no-repeat 50% 50%;
 	background-size: cover;
 }
 .rating label:not(:first-of-type) {
