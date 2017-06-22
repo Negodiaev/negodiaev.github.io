@@ -47,14 +47,20 @@
                 '<div class="project-image"' +
                      'style="background-image: url(' +
                      projectsDir + item.imageUrl + ');"></div>' +
-                '<div class="project-title">' +
-                  item.title +
+                '<div class="project-info">' +
+                  '<div class="project__title">' +
+                    item.title +
+                  '</div>' +
+                  '<p class="project__description">' +
+                    item.description +
+                  '</p>' +
+                  '<div class="project-links-container">' +
+                    '<div class="project-links">' +
+                      '<a href="' + projectsDir + item.url + '"' +
+                         'class="project__link" target="_blank">Show</a>' +
+                    '</div>' +
+                  '</div>' +
                 '</div>' +
-                '<div class="project-decription">' +
-                  item.description +
-                '</div>' +
-                '<a href="' + projectsDir + item.url + '"' +
-                   'class="project-link" target="_blank">Show</a>' +
               '</div>' +
             '</div>';
           });
@@ -68,6 +74,14 @@
       };
 
       request.send();
+    //------------------------------------------------------------------------//
+
+
+    //------------------------------------------------------------------------//
+    //showing a hero title
+    setTimeout(function() {
+      document.querySelector('.hero__title').classList.remove('hero__title--hidden');
+    }, 2000);
     //------------------------------------------------------------------------//
 
   });

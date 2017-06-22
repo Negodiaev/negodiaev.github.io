@@ -55,7 +55,8 @@ a {
 }
 
 header {
-	background: url(../img/top-bg.jpg) top center no-repeat;
+	background: #2a2a2a url(../img/top-bg.jpg) top center no-repeat;
+	background-size: cover;
 	min-height: 668px;
 	position: relative;
 	font-family: "BebasBold";

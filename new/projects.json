@@ -2,73 +2,73 @@
   "projects": {
     "sportshold": {
       "title": "Sportshold",
-      "description": "Online store",
+      "description": "An example of sports footwear online store (Home page).",
       "url": "sportshold/index.html",
       "imageUrl": "images/sportshold.jpg"
     },
     "hoteldeluxe": {
       "title": "Hotel Deluxe",
-      "description": "Hotel website",
+      "description": "An example of a hotel website home page (made with Flexbox).",
       "url": "hoteldeluxe/index.html",
       "imageUrl": "images/hoteldeluxe.jpg"
     },
     "axit": {
       "title": "Axit",
-      "description": "Description...",
+      "description": "An example of standard hosting provider website (Landing page).",
       "url": "axit/index.html",
       "imageUrl": "images/axit.jpg"
     },
     "webdetector": {
       "title": "Web Detector",
-      "description": "Description...",
+      "description": "Global search service of goods (few pages).",
       "url": "webdetector/index.html",
       "imageUrl": "images/webdetector.jpg"
     },
     "photosite": {
       "title": "Photo site",
-      "description": "Description...",
+      "description": "A multi page website for a photostudio.",
       "url": "fotosite/index.html",
       "imageUrl": "images/fotosite.jpg"
     },
     "smartkart": {
       "title": "Smart Kart",
-      "description": "Description...",
+      "description": "A website for a karting center (Landing page).",
       "url": "smartkart/index.html",
       "imageUrl": "images/smartkart.jpg"
     },
     "foresttechnologies": {
       "title": "Forest technologies",
-      "description": "Description...",
+      "description": "A multi page website for a company that produces lumber and wood products.",
       "url": "lesteh/index.html",
       "imageUrl": "images/lesteh.jpg"
     },
     "victory": {
       "title": "Victory",
-      "description": "Description...",
+      "description": "A website for a legal center that offers law services for individuals and legal entities (Landing page).",
       "url": "victory/index.html",
       "imageUrl": "images/victory.jpg"
     },
     "smokings": {
       "title": "Smokings",
-      "description": "Description...",
+      "description": "A website of men's wedding suits rent (Landing page with fixed width).",
       "url": "smoking/index.html",
       "imageUrl": "images/smoking.jpg"
     },
     "carrental": {
       "title": "Car rental",
-      "description": "Description...",
+      "description": "An example of a car rent website (Home page). Includes animation effects.",
       "url": "carrental/index.html",
       "imageUrl": "images/carrental.jpg"
     },
     "fooseshoe": {
       "title": "Foose shoe",
-      "description": "Description...",
+      "description": "An example of men's footwear online store (Home page). Includes popups containing product info.",
       "url": "fooseshoe/index.html",
       "imageUrl": "images/fooseshoe.jpg"
     },
     "blueasy": {
       "title": "Blueasy",
-      "description": "Description...",
+      "description": "Portfolio website example (Landing page). Includes animation effects and a callback form.",
       "url": "blueasy/index.html",
       "imageUrl": "images/blueasy.jpg"
     }
