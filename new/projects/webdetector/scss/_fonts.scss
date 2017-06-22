@@ -1,7 +1,0 @@
-/* Fonts */
-@include font-face("fontello", "../fonts/icon-font/fontello", $file-formats: eot woff2 woff ttf svg);
-@include font-face("Lato", "../fonts/Lato/Lato-Regular", 400, $file-formats: eot woff2 woff ttf);
-@include font-face("Lato", "../fonts/Lato/Lato-Light", 300, $file-formats: eot woff2 woff ttf);
-@include font-face("Lato", "../fonts/Lato/Lato-Bold", 700, $file-formats: eot woff2 woff ttf);
-@include font-face("Lato", "../fonts/Lato/Lato-Black", 900, $file-formats: eot woff2 woff ttf);
-// @import 'https://fonts.googleapis.com/css?family=Montserrat';

@@ -1954,6 +1954,7 @@ a:hover {
 	height: 25rem;
 	color: #fff;
 	background-color: #d7d7d7;
+	background-image: url(./../images/bg-hero.jpg);
 	background-position: 50% 100%;
 	background-size: cover; 
 	background-repeat: no-repeat;
@@ -2023,6 +2024,7 @@ a:hover {
 	height: 100%;
 	color: #fff;
 	background-color: #d7d7d7;
+	background-image: url(./../images/bg-hero.jpg);
 	background-attachment: fixed; 
 	background-position: 50% 0;
 	background-size: cover;
@@ -2205,14 +2207,26 @@ a:hover {
 
 /* Media queries */
 @media screen and (max-width: 1024px) {
+	.hero {
+		background-image: url(./../images/bg-hero-tablet.jpg);
+	}
+	.page-footer {
+		background-image: url(./../images/bg-hero-tablet.jpg);
+	}
 	.page-footer__contact {
 		background-color: rgba(102, 102, 102, .6);
 	}
 }
 
 @media screen and (max-width: 767px) {
+	.hero {
+		background-image: url(./../images/bg-hero-mobile.jpg);
+	}
 	.about__photo {
 		width: 45%;
+	}
+	.page-footer {
+		background-image: url(./../images/bg-hero-mobile.jpg);
 	}
 }
 
