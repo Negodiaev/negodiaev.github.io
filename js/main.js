@@ -24,7 +24,7 @@
     //creating a projects list
     var projectsContainer = document.getElementById('projects-container'),
         projectsList = [],
-        projectsDir = 'https://negodiaev.github.io/new/projects/';
+        projectsDir = 'https://negodiaev.github.io/projects/';
 
     var request = new XMLHttpRequest();
       request.open('GET', 'projects.json', true);
