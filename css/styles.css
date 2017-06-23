@@ -2167,6 +2167,37 @@ a:hover {
 	background-color: #ff3b30;
 }
 
+.error-page {
+	position: relative;
+	background-color: #d7d7d7;
+}
+
+.error-message {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 0 20px 2.5em;
+	max-width: 100%;
+	width: 50em;
+	text-align: center;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+
+.error-message__number {
+	margin-bottom: .25em;
+	font-size: 10rem;
+	line-height: 1;
+	font-weight: 700;
+	text-shadow: -1px -1px 2px rgba(102, 102, 102, .4); 
+	color: #f7f7f7;
+}
+
+.error-message__text {
+	margin-bottom: .83333em;
+	font-size: 1.5rem;
+}
+
 /* forms */
 .textarea {
 	overflow: auto;
