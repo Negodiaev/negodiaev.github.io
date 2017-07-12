@@ -80,7 +80,7 @@
     //------------------------------------------------------------------------//
     //showing a hero title
     setTimeout(function() {
-      document.querySelector('.hero__title').classList.remove('hero__title--hidden');
+      document.querySelector('.hero__title').classList.add('hero__title--shown');
     }, 2000);
     //------------------------------------------------------------------------//
 

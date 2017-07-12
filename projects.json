@@ -1,5 +1,11 @@
 {
   "projects": {
+    "pahu": {
+      "title": "Pahu design",
+      "description": "An example of a design interior store project (Home page).",
+      "url": "pahu/index.html",
+      "imageUrl": "images/pahu.jpg"
+    },
     "sportshold": {
       "title": "Sportshold",
       "description": "An example of sports footwear online store (Home page).",
