@@ -53,7 +53,7 @@
     //Sliders
     var heroSlider = tns({
       container: document.getElementById('hero-slider'),
-      // autoplay: false,
+      autoplay: true,
       speed: 1000,
       autoplayTimeout: 5000,
       controlsText: ['&#x221F;', '&#x221F;'],
@@ -69,7 +69,7 @@
         481: 2,
       },
       slideBy: 'page',
-      // autoplay: false,
+      autoplay: true,
       speed: 1000,
       autoplayTimeout: 10000,
       controlsText: ['&#x221F;', '&#x221F;']
