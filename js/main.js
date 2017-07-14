@@ -23,16 +23,17 @@
     //------------------------------------------------------------------------//
     //creating a projects list
     var projectsContainer = document.getElementById('projects-container'),
-        projectsList = [],
-        projectsDir = 'https://negodiaev.github.io/projects/';
+        projectsDir = 'https://negodiaev.github.io/projects/',
+        projectsCounter = 0;
 
-    var request = new XMLHttpRequest();
+    function getProjects(projectsNumber) {
+      var projectsList = [];
+      var request = new XMLHttpRequest();
       request.open('GET', 'projects.json', true);
 
       request.onload = function() {
-      	if (this.status >= 200 && this.status < 400) {
-      		var data = JSON.parse(this.response),
-              project = '';
+        if (this.status >= 200 && this.status < 400) {
+          var data = JSON.parse(this.response);
 
           for (var prop in data.projects) {
             if (data.projects.hasOwnProperty(prop)) {
@@ -40,40 +41,84 @@
             }
           }
 
-          projectsList.forEach(function(item) {
-            projectsContainer.innerHTML +=
-            '<div class="grid-25 tablet-grid-33 mobile-grid-50">' +
-              '<div class="project">' +
-                '<div class="project-image"' +
-                     'style="background-image: url(' +
-                     projectsDir + item.imageUrl + ');"></div>' +
-                '<div class="project-info">' +
-                  '<div class="project__title">' +
-                    item.title +
-                  '</div>' +
-                  '<p class="project__description">' +
-                    item.description +
-                  '</p>' +
-                  '<div class="project-links-container">' +
-                    '<div class="project-links">' +
-                      '<a href="' + projectsDir + item.url + '"' +
-                         'class="project__link" target="_blank">Show</a>' +
-                    '</div>' +
-                  '</div>' +
-                '</div>' +
-              '</div>' +
-            '</div>';
-          });
-      	} else {
-      		console.error('Response received and there was an error');
-      	}
+          for (var i = 0; i < projectsNumber; i++) {
+            if (projectsCounter >= projectsList.length) {
+              console.log('too much');
+              removeLoadBtn();
+              return;
+            } else {
+              addProject(projectsList[projectsCounter]);
+              projectsCounter++;
+            }
+          }
+          console.log(projectsCounter + ', ' + projectsList.length);
+          addLoadBtn();
+        } else {
+          console.error('Response received and there was an error');
+        }
       };
 
-      request.onerror = function() {
-      	console.error('Request error');
-      };
-
+      request.onerror = function() { console.error('Request error'); };
       request.send();
+    }
+
+    function addProject(item) {
+      projectsContainer.innerHTML +=
+       '<div class="grid-25 tablet-grid-33 mobile-grid-50">' +
+        '<div class="project">' +
+          '<div class="project-image"' +
+               'style="background-image: url(' +
+            projectsDir + item.imageUrl + ');"></div>' +
+          '<div class="project-info">' +
+            '<div class="project__title">' +
+              item.title +
+            '</div>' +
+            '<p class="project__description">' +
+              item.description +
+            '</p>' +
+            '<div class="project-links-container">' +
+              '<div class="project-links">' +
+                '<a href="' + projectsDir + item.url + '"' +
+                   'class="project__link" target="_blank">Show</a>' +
+              '</div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }
+
+    function createLoadBtn() {
+      var btn = document.createElement('button'),
+          btnWrap = document.createElement('div'),
+          btnContainer = document.createElement('div');
+
+      btn.className = 'btn btn-load projects__btn-load';
+      btn.textContent = 'Load more';
+      btnWrap.className = 'grid-100 projects__btn-load-wrap';
+      btnWrap.appendChild(btn);
+      btnContainer.className = 'grid-container projects__btn-load-container';
+      btnContainer.appendChild(btnWrap);
+
+      projectsContainer.parentElement.appendChild(btnContainer);
+    }
+
+    function addLoadBtn() {
+      var btnLoad = document.querySelector('.projects__btn-load');
+      if (!btnLoad) {
+        createLoadBtn();
+
+        btnLoad = document.querySelector('.projects__btn-load');
+      }
+      btnLoad.addEventListener('click', function() { getProjects(4); });
+    }
+
+    function removeLoadBtn() {
+      var btnContainer = document.querySelector('.projects__btn-load-container');
+
+      if (btnContainer) btnContainer.parentElement.removeChild(btnContainer);
+    }
+
+    getProjects(8);
     //------------------------------------------------------------------------//
 
 

@@ -2057,7 +2057,6 @@ a:hover {
 	line-height: 1.1;
 	text-align: center;
 	opacity: 0;
-	transition: opacity .5s ease-in;
 }
 .hero__title.hero__title--shown {
 	opacity: 1;
@@ -2235,6 +2234,26 @@ a:hover {
 	   -moz-user-select: none;
 	    -ms-user-select: none;
 	        user-select: none;
+}
+
+.btn-load {
+	display: block;
+	margin: 1.111em auto;
+	padding: .786em 1.857em;
+	border: 1px solid #b3b3b3;
+	border-radius: 5px;
+	font-size: .875rem;
+	line-height: 1.5;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #a6a6a6;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	transition: border-color .15s linear, background-color .15s linear;
+}
+.btn-load:hover {
+	border-color: #a6a6a6;
+	background-color: #999;
 }
 
 /* Media queries */
