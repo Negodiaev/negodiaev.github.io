@@ -1,5 +1,11 @@
 {
   "projects": {
+    "simpletranslator": {
+      "title": "Simple translator",
+      "description": "A simple Vue.js word translator",
+      "url": "https://negodiaev.github.io/simple-translator/",
+      "imageUrl": "images/pahu.jpg"
+    },
     "pahu": {
       "title": "Pahu design",
       "description": "An example of a design interior store project (Home page).",
